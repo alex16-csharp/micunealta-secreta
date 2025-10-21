@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Micunealta Secreta Auto Service</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>Micunealta Secreta</h1>
+        <p>Auto Service Professional</p>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="despre.html">Despre</a></li>
+        <li><a href="servicii.html">Servicii</a></li>
+        <li><a href="piese.html">Piese</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Contact și programări</h1>
+        <p>Suntem aici să te ajutăm cu orice problemă auto</p>
+      </div>
+    </section>
+
+    <section class="contact-details">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Date de contact</h3>
+            <p>📍 Strada Mecanicilor nr. 25, București</p>
+            <p>📞 0721 123 456</p>
+            <p>✉️ contact@micunealta-secreta.ro</p>
+            <p>🕒 Luni - Vineri: 8:00 - 18:00 | Sâmbătă: 9:00 - 14:00</p>
+          </div>
+          <div class="contact-card">
+            <h3>Harta</h3>
+            <div class="map-wrap">
+              <iframe title="Harta service" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.391!2d26.102!3d44.426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zNDTCsDI1JzMzLjYiTiAyNsKwMDYnMDcuMiJF!5e0!3m2!1sro!2sro!4v00000000000" width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="formular" class="contact-form">
+      <div class="container">
+        <h2>Formular de programare</h2>
+        <form action="#" method="post">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="nume">Nume</label>
+              <input type="text" id="nume" name="nume" placeholder="Numele tău" required />
+            </div>
+            <div class="form-group">
+              <label for="telefon">Telefon</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="07xx xxx xxx" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="adresa@exemplu.ro" required />
+            </div>
+            <div class="form-group">
+              <label for="marca">Marcă și model</label>
+              <input type="text" id="marca" name="marca" placeholder="Ex: VW Golf 7 2.0 TDI" />
+            </div>
+            <div class="form-group">
+              <label for="vin">Serie VIN (opțional)</label>
+              <input type="text" id="vin" name="vin" placeholder="WVWZZZ..." />
+            </div>
+            <div class="form-group full">
+              <label for="mesaj">Descrierea problemei</label>
+              <textarea id="mesaj" name="mesaj" rows="5" placeholder="Descrie pe scurt problema"></textarea>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn">Trimite cererea</button>
+            <p class="disclaimer">Prin trimiterea formularului ești de acord cu prelucrarea datelor tale în scopul programării.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Ai nevoie de o ofertă pentru piese?</h2>
+        <p>Trimite-ne seria VIN și îți răspundem în aceeași zi.</p>
+        <a class="btn" href="piese.html">Vezi piesele</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Micunealta Secreta</h3>
+          <p>Auto Service de încredere din 2009</p>
+        </div>
+        <div class="footer-section">
+          <h4>Linkuri</h4>
+          <ul>
+            <li><a href="despre.html">Despre</a></li>
+            <li><a href="servicii.html">Servicii</a></li>
+            <li><a href="piese.html">Piese</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Urmărește-ne</h4>
+          <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Micunealta Secreta. Toate drepturile rezervate.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
