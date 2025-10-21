@@ -3,112 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Micunealta Secretă - Atelier Mecanic Auto</title>
+    <title>Auto Service Premium - Servicii Complete Auto</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header cu Logo și Meniu -->
     <header class="main-header">
         <div class="container">
-            <div class="logo">
-                <h1>🔧 Micunealta Secretă</h1>
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-cog"></i>
+                    <span>Auto Service<br><strong>PREMIUM</strong></span>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="active"><i class="fas fa-home"></i> Acasă</a></li>
+                        <li><a href="despre.html"><i class="fas fa-info-circle"></i> Despre</a></li>
+                        <li><a href="servicii.html"><i class="fas fa-wrench"></i> Servicii</a></li>
+                        <li><a href="piese.html"><i class="fas fa-car"></i> Piese</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html" class="active">Acasă</a></li>
-                    <li><a href="despre.html">Despre Noi</a></li>
-                    <li><a href="servicii.html">Servicii</a></li>
-                    <li><a href="piese.html">Piese Auto</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h2>Atelier Mecanic de Încredere</h2>
-            <p>Oferim servicii complete de reparații și întreținere auto</p>
-            <div class="cta-buttons">
-                <a href="servicii.html" class="btn btn-primary">Serviciile Noastre</a>
-                <a href="contact.html" class="btn btn-secondary">Programează-te</a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="images/placeholder-auto.jpg" alt="Atelier mecanic auto" onerror="this.style.display='none'">
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-section">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <h2>Bine Ați Venit la Micunealta Secretă</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Cu peste 15 ani de experiență în domeniul mecanic auto, echipa noastră oferă soluții complete pentru întreținerea și repararea autovehiculelor tale.</p>
-                    <p>Folosim echipamente moderne și piese de calitate pentru a asigura funcționarea optimă a mașinii tale.</p>
-                    <ul class="features">
-                        <li>✓ Diagnosticare computerizată</li>
-                        <li>✓ Reparații motor și cutie de viteze</li>
-                        <li>✓ Întreținere periodică</li>
-                        <li>✓ Sistem de frânare și suspensie</li>
-                        <li>✓ Instalații electrice</li>
-                    </ul>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-box">
-                        <h3>1500+</h3>
-                        <p>Clienți Mulțumiți</p>
-                    </div>
-                    <div class="stat-box">
-                        <h3>15 Ani</h3>
-                        <p>Experiență</p>
-                    </div>
-                    <div class="stat-box">
-                        <h3>24/7</h3>
-                        <p>Suport</p>
-                    </div>
+            <div class="hero-content">
+                <h1>Bine ați venit la Auto Service Premium</h1>
+                <p>Servicii profesionale de reparații și întreținere auto cu echipamente de ultimă generație</p>
+                <div class="hero-buttons">
+                    <a href="servicii.html" class="btn btn-primary"><i class="fas fa-tools"></i> Vezi Serviciile</a>
+                    <a href="contact.html" class="btn btn-secondary"><i class="fas fa-phone"></i> Contactează-ne</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Preview -->
+    <!-- Preview Servicii -->
     <section class="services-preview">
         <div class="container">
-            <h2>Serviciile Noastre Principale</h2>
+            <div class="section-header">
+                <h2>Serviciile Noastre</h2>
+                <p>Oferim o gamă completă de servicii auto profesionale</p>
+            </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">🔧</div>
-                    <h3>Reparații Mecanice</h3>
-                    <p>Reparații complete pentru motor, cutie de viteze și transmisie</p>
+                    <div class="service-icon">
+                        <i class="fas fa-oil-can"></i>
+                    </div>
+                    <h3>Schimb Ulei</h3>
+                    <p>Schimb complet de ulei și filtre cu produse premium</p>
+                    <a href="servicii.html" class="card-link">Detalii <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🔍</div>
+                    <div class="service-icon">
+                        <i class="fas fa-car-crash"></i>
+                    </div>
                     <h3>Diagnosticare</h3>
-                    <p>Diagnosticare computerizată cu echipamente profesionale</p>
+                    <p>Diagnosticare computerizată cu echipamente moderne</p>
+                    <a href="servicii.html" class="card-link">Detalii <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">⚙️</div>
-                    <h3>Întreținere</h3>
-                    <p>Revizii tehnice periodice și schimb de consumabile</p>
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Reparații Mecanice</h3>
+                    <p>Reparații complete pentru toate sistemele auto</p>
+                    <a href="servicii.html" class="card-link">Detalii <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🛡️</div>
-                    <h3>Sisteme de Frânare</h3>
-                    <p>Verificare și reparații sistem frânare și ABS</p>
+                    <div class="service-icon">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <h3>Electrică Auto</h3>
+                    <p>Reparații și întreținere sistem electric și electronic</p>
+                    <a href="servicii.html" class="card-link">Detalii <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- De ce noi Section -->
+    <section class="why-us">
         <div class="container">
-            <h2>Ai Nevoie de Ajutor?</h2>
-            <p>Contactează-ne astăzi pentru o programare sau o consultație gratuită</p>
-            <a href="contact.html" class="btn btn-large">Contactează-ne Acum</a>
+            <div class="two-column">
+                <div class="column-image">
+                    <img src="images/workshop.jpg" alt="Atelier Auto Service Premium">
+                </div>
+                <div class="column-content">
+                    <h2>De ce să alegi Auto Service Premium?</h2>
+                    <ul class="features-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Experiență de peste 15 ani</strong>
+                                <p>Echipă cu experiență vastă în reparații auto</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Echipamente Moderne</strong>
+                                <p>Tehnologie de ultimă generație pentru diagnosticare</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Prețuri Competitive</strong>
+                                <p>Raport calitate-preț excelent pentru toate serviciile</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Garanție Extinsă</strong>
+                                <p>Toate serviciile beneficiază de garanție extinsă</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="despre.html" class="btn btn-primary">Află Mai Multe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Piese Section -->
+    <section class="parts-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Piese Auto Originale</h2>
+                <p>Acces la o gamă largă de piese originale și aftermarket</p>
+            </div>
+            <div class="parts-showcase">
+                <img src="images/parts-performance.jpg" alt="Piese Auto Premium">
+                <div class="parts-content">
+                    <h3>Piese de Calitate Superioară</h3>
+                    <p>Oferim piese auto originale și aftermarket de la cei mai reputați producători. Toate piesele sunt certificate și beneficiază de garanție.</p>
+                    <ul>
+                        <li><i class="fas fa-star"></i> Piese originale de fabrică</li>
+                        <li><i class="fas fa-star"></i> Produse aftermarket premium</li>
+                        <li><i class="fas fa-star"></i> Garanție extended pe toate piesele</li>
+                        <li><i class="fas fa-star"></i> Livrare rapidă din stock</li>
+                    </ul>
+                    <a href="piese.html" class="btn btn-primary">Catalog Piese</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -116,28 +167,41 @@
     <footer class="main-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Micunealta Secretă</h3>
-                    <p>Atelierul tău de încredere pentru toate nevoile auto</p>
+                <div class="footer-column">
+                    <div class="logo">
+                        <i class="fas fa-cog"></i>
+                        <span>Auto Service<br><strong>PREMIUM</strong></span>
+                    </div>
+                    <p>Servicii profesionale de reparații și întreținere auto de peste 15 ani.</p>
                 </div>
-                <div class="footer-section">
+                <div class="footer-column">
                     <h4>Link-uri Rapide</h4>
                     <ul>
-                        <li><a href="despre.html">Despre Noi</a></li>
+                        <li><a href="index.html">Acasă</a></li>
+                        <li><a href="despre.html">Despre</a></li>
                         <li><a href="servicii.html">Servicii</a></li>
-                        <li><a href="piese.html">Piese Auto</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="piese.html">Piese</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer-column">
                     <h4>Contact</h4>
-                    <p>📞 Telefon: 0740 123 456</p>
-                    <p>✉️ Email: contact@micunealta.ro</p>
-                    <p>📍 Str. Mecanicilor nr. 10</p>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +40 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> contact@autopremium.ro</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Str. Exemplu nr. 123, București</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Program</h4>
+                    <ul>
+                        <li>Luni - Vineri: 08:00 - 18:00</li>
+                        <li>Sâmbătă: 09:00 - 14:00</li>
+                        <li>Duminică: Închis</li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Micunealta Secretă. Toate drepturile rezervate.</p>
+                <p>&copy; 2025 Auto Service Premium. Toate drepturile rezervate.</p>
             </div>
         </div>
     </footer>

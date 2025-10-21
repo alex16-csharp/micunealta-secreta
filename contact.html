@@ -1,132 +1,175 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact - Micunealta Secreta Auto Service</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Auto Service Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <h1>Micunealta Secreta</h1>
-        <p>Auto Service Professional</p>
-      </div>
-      <ul class="nav-menu">
-        <li><a href="index.html">Acasă</a></li>
-        <li><a href="despre.html">Despre</a></li>
-        <li><a href="servicii.html">Servicii</a></li>
-        <li><a href="piese.html">Piese</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-cog"></i>
+                    <span>Auto Service<br><strong>PREMIUM</strong></span>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Acasă</a></li>
+                        <li><a href="despre.html"><i class="fas fa-info-circle"></i> Despre</a></li>
+                        <li><a href="servicii.html"><i class="fas fa-wrench"></i> Servicii</a></li>
+                        <li><a href="piese.html"><i class="fas fa-car"></i> Piese</a></li>
+                        <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Contact și programări</h1>
-        <p>Suntem aici să te ajutăm cu orice problemă auto</p>
-      </div>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contactează-ne</h1>
+            <p>Suntem aici să te ajutăm cu orice problemă auto</p>
+        </div>
     </section>
 
-    <section class="contact-details">
-      <div class="container">
-        <div class="contact-grid">
-          <div class="contact-card">
-            <h3>Date de contact</h3>
-            <p>📍 Strada Mecanicilor nr. 25, București</p>
-            <p>📞 0721 123 456</p>
-            <p>✉️ contact@micunealta-secreta.ro</p>
-            <p>🕒 Luni - Vineri: 8:00 - 18:00 | Sâmbătă: 9:00 - 14:00</p>
-          </div>
-          <div class="contact-card">
-            <h3>Harta</h3>
-            <div class="map-wrap">
-              <iframe title="Harta service" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.391!2d26.102!3d44.426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zNDTCsDI1JzMzLjYiTiAyNsKwMDYnMDcuMiJF!5e0!3m2!1sro!2sro!4v00000000000" width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Contact Content -->
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <div class="two-column">
+                    <div class="column-content">
+                        <h2>Trimite-ne un mesaj</h2>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nume complet</label>
+                                <input type="text" id="name" name="name" required placeholder="Ion Popescu">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="ion.popescu@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="0722 123 456">
+                            </div>
+                            <div class="form-group">
+                                <label for="car">Mașină (model și an)</label>
+                                <input type="text" id="car" name="car" placeholder="Ex: VW Golf 2015">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mesaj</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Descrie problema sau serviciul dorit..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Trimite Mesaj
+                            </button>
+                        </form>
+                    </div>
+                    <div class="column-content">
+                        <h2>Informații Contact</h2>
+                        <div class="contact-info-box">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <h4>Adresă</h4>
+                                    <p>Str. Exemplu nr. 123<br>Sector 1, București</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-phone"></i></div>
+                                <div>
+                                    <h4>Telefon</h4>
+                                    <p>+40 123 456 789<br>+40 721 000 000</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>contact@autopremium.ro<br>service@autopremium.ro</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-clock"></i></div>
+                                <div>
+                                    <h4>Program</h4>
+                                    <p>Luni - Vineri: 08:00 - 18:00<br>
+                                    Sâmbătă: 09:00 - 14:00<br>
+                                    Duminică: Închis</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="map-placeholder">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.5714294621883!2d26.096306315561993!3d44.43925197910209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff5b5c3b0a27%3A0x536a8df8f4d3dc70!2sBucure%C8%99ti!5e0!3m2!1sro!2sro!4v1234567890123!5m2!1sro!2sro" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0; border-radius: 10px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
+    </main>
 
-    <section id="formular" class="contact-form">
-      <div class="container">
-        <h2>Formular de programare</h2>
-        <form action="#" method="post">
-          <div class="form-grid">
-            <div class="form-group">
-              <label for="nume">Nume</label>
-              <input type="text" id="nume" name="nume" placeholder="Numele tău" required />
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <i class="fas fa-cog"></i>
+                        <span>Auto Service<br><strong>PREMIUM</strong></span>
+                    </div>
+                    <p>Servicii profesionale de reparații și întreținere auto de peste 15 ani.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Link-uri Rapide</h4>
+                    <ul>
+                        <li><a href="index.html">Acasă</a></li>
+                        <li><a href="despre.html">Despre</a></li>
+                        <li><a href="servicii.html">Servicii</a></li>
+                        <li><a href="piese.html">Piese</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +40 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> contact@autopremium.ro</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Str. Exemplu nr. 123, București</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Program</h4>
+                    <ul>
+                        <li>Luni - Vineri: 08:00 - 18:00</li>
+                        <li>Sâmbătă: 09:00 - 14:00</li>
+                        <li>Duminică: Închis</li>
+                    </ul>
+                </div>
             </div>
-            <div class="form-group">
-              <label for="telefon">Telefon</label>
-              <input type="tel" id="telefon" name="telefon" placeholder="07xx xxx xxx" required />
+            <div class="footer-bottom">
+                <p>&copy; 2025 Auto Service Premium. Toate drepturile rezervate.</p>
             </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="adresa@exemplu.ro" required />
-            </div>
-            <div class="form-group">
-              <label for="marca">Marcă și model</label>
-              <input type="text" id="marca" name="marca" placeholder="Ex: VW Golf 7 2.0 TDI" />
-            </div>
-            <div class="form-group">
-              <label for="vin">Serie VIN (opțional)</label>
-              <input type="text" id="vin" name="vin" placeholder="WVWZZZ..." />
-            </div>
-            <div class="form-group full">
-              <label for="mesaj">Descrierea problemei</label>
-              <textarea id="mesaj" name="mesaj" rows="5" placeholder="Descrie pe scurt problema"></textarea>
-            </div>
-          </div>
-          <div class="form-actions">
-            <button type="submit" class="btn">Trimite cererea</button>
-            <p class="disclaimer">Prin trimiterea formularului ești de acord cu prelucrarea datelor tale în scopul programării.</p>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="container">
-        <h2>Ai nevoie de o ofertă pentru piese?</h2>
-        <p>Trimite-ne seria VIN și îți răspundem în aceeași zi.</p>
-        <a class="btn" href="piese.html">Vezi piesele</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Micunealta Secreta</h3>
-          <p>Auto Service de încredere din 2009</p>
         </div>
-        <div class="footer-section">
-          <h4>Linkuri</h4>
-          <ul>
-            <li><a href="despre.html">Despre</a></li>
-            <li><a href="servicii.html">Servicii</a></li>
-            <li><a href="piese.html">Piese</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Urmărește-ne</h4>
-          <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Micunealta Secreta. Toate drepturile rezervate.</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

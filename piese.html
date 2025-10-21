@@ -1,151 +1,160 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Piese Auto - Micunealta Secreta</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piese Auto - Auto Service Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <h1>Micunealta Secreta</h1>
-        <p>Auto Service & Piese</p>
-      </div>
-      <ul class="nav-menu">
-        <li><a href="index.html">Acasă</a></li>
-        <li><a href="despre.html">Despre</a></li>
-        <li><a href="servicii.html">Servicii</a></li>
-        <li><a href="piese.html" class="active">Piese</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-cog"></i>
+                    <span>Auto Service<br><strong>PREMIUM</strong></span>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Acasă</a></li>
+                        <li><a href="despre.html"><i class="fas fa-info-circle"></i> Despre</a></li>
+                        <li><a href="servicii.html"><i class="fas fa-wrench"></i> Servicii</a></li>
+                        <li><a href="piese.html" class="active"><i class="fas fa-car"></i> Piese</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Piese auto originale și aftermarket</h1>
-        <p>Stoc rapid, consultanță tehnică și garanție producător</p>
-      </div>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Piese Auto</h1>
+            <p>Piese originale și aftermarket premium cu garanție</p>
+        </div>
     </section>
 
-    <section class="parts-categories">
-      <div class="container">
-        <h2>Categorii de piese</h2>
-        <div class="parts-grid">
-          <a class="part-card" href="#filtre">
-            <img src="images/filtre.jpg" alt="Filtre" />
-            <h3>Filtre</h3>
-            <p>Ulei, aer, combustibil, polen</p>
-          </a>
-          <a class="part-card" href="#frane">
-            <img src="images/discuri-placute.jpg" alt="Frâne" />
-            <h3>Frâne</h3>
-            <p>Plăcuțe, discuri, etriere, lichid</p>
-          </a>
-          <a class="part-card" href="#suspensie">
-            <img src="images/suspensie-piese.jpg" alt="Suspensie" />
-            <h3>Suspensie</h3>
-            <p>Amortizoare, arcuri, bucșe</p>
-          </a>
-          <a class="part-card" href="#transmisie">
-            <img src="images/ambreiaj.jpg" alt="Transmisie" />
-            <h3>Transmisie</h3>
-            <p>Kit ambreiaj, volantă, ulei</p>
-          </a>
-          <a class="part-card" href="#motor">
-            <img src="images/piese-motor.jpg" alt="Piese motor" />
-            <h3>Piese motor</h3>
-            <p>Distribuție, pompe, senzori</p>
-          </a>
-          <a class="part-card" href="#electrice">
-            <img src="images/electrice.jpg" alt="Electrice" />
-            <h3>Electrice</h3>
-            <p>Alternator, demaror, baterii</p>
-          </a>
-        </div>
-      </div>
-    </section>
+    <!-- Featured -->
+    <main>
+        <section class="featured">
+            <div class="container two-column">
+                <div class="column-image">
+                    <img src="images/parts-performance.jpg" alt="Piese auto premium performanță">
+                </div>
+                <div class="column-content">
+                    <h2>Calitate fără compromis</h2>
+                    <p>Lucrăm doar cu furnizori de încredere și piese certificate. Fiecare piesă este verificată și are garanție de conformitate.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Piese originale OEM</li>
+                        <li><i class="fas fa-check-circle"></i> Alternative aftermarket premium</li>
+                        <li><i class="fas fa-check-circle"></i> Consultanță pentru alegerea corectă</li>
+                        <li><i class="fas fa-check-circle"></i> Montaj profesionist în service</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <section class="featured">
-      <div class="container">
-        <h2>Produse populare</h2>
-        <div class="products-grid">
-          <div class="product">
-            <img src="images/ulei-motor.jpg" alt="Ulei motor 5W30" />
-            <h3>Ulei motor 5W30 LongLife</h3>
-            <p>Compatibil VW/Audi/BMW, canistră 5L</p>
-            <p class="price">149 RON</p>
-          </div>
-          <div class="product">
-            <img src="images/kit-distributie.jpg" alt="Kit distribuție" />
-            <h3>Kit distribuție + pompă apă</h3>
-            <p>Gates/Conti - garanție 24 luni</p>
-            <p class="price">de la 699 RON</p>
-          </div>
-          <div class="product">
-            <img src="images/kit-ambreiaj.jpg" alt="Kit ambreiaj" />
-            <h3>Kit ambreiaj cu volantă</h3>
-            <p>LUK/Sachs - pentru motorizări TDI/HDI</p>
-            <p class="price">de la 1599 RON</p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- Catalog simplu -->
+        <section class="catalog">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Categorii Populare</h2>
+                    <p>Găsește rapid piesele de care ai nevoie</p>
+                </div>
+                <div class="products-grid">
+                    <div class="product">
+                        <div class="product-icon"><i class="fas fa-fan"></i></div>
+                        <h3>Filtre & Ulei</h3>
+                        <p>Seturi complete pentru revizii periodice</p>
+                        <a class="card-link" href="contact.html">Cere ofertă</a>
+                    </div>
+                    <div class="product">
+                        <div class="product-icon"><i class="fas fa-car-battery"></i></div>
+                        <h3>Baterii</h3>
+                        <p>Baterii premium pentru toate mărcile</p>
+                        <a class="card-link" href="contact.html">Disponibilitate</a>
+                    </div>
+                    <div class="product">
+                        <div class="product-icon"><i class="fas fa-brake-warning"></i></div>
+                        <h3>Frâne</h3>
+                        <p>Plăcuțe, discuri, lichid frână</p>
+                        <a class="card-link" href="contact.html">Verifică stoc</a>
+                    </div>
+                    <div class="product">
+                        <div class="product-icon"><i class="fas fa-gears"></i></div>
+                        <h3>Transmisie</h3>
+                        <p>Kit ambreiaj, distribuție, cutie</p>
+                        <a class="card-link" href="contact.html">Cere ofertă</a>
+                    </div>
+                    <div class="product">
+                        <div class="product-icon"><i class="fas fa-circle-notch"></i></div>
+                        <h3>Roți & Anvelope</h3>
+                        <p>Anvelope, jante, accesorii</p>
+                        <a class="card-link" href="contact.html">Vezi opțiuni</a>
+                    </div>
+                    <div class="product">
+                        <div class="product-icon"><i class="fas fa-bolt"></i></div>
+                        <h3>Electrică</h3>
+                        <p>Senzori, alternatoare, demaroare</p>
+                        <a class="card-link" href="contact.html">Solicită ofertă</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <section class="brands">
-      <div class="container">
-        <h2>Mărci disponibile</h2>
-        <ul class="brand-list">
-          <li>Bosch</li>
-          <li>Mahle</li>
-          <li>Mann-Filter</li>
-          <li>TRW</li>
-          <li>ATE</li>
-          <li>Febi</li>
-          <li>LUK</li>
-          <li>Sachs</li>
-        </ul>
-      </div>
-    </section>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <i class="fas fa-cog"></i>
+                        <span>Auto Service<br><strong>PREMIUM</strong></span>
+                    </div>
+                    <p>Servicii profesionale de reparații și întreținere auto de peste 15 ani.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Link-uri Rapide</h4>
+                    <ul>
+                        <li><a href="index.html">Acasă</a></li>
+                        <li><a href="despre.html">Despre</a></li>
+                        <li><a href="servicii.html">Servicii</a></li>
+                        <li><a href="piese.html">Piese</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +40 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> contact@autopremium.ro</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Str. Exemplu nr. 123, București</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Program</h4>
+                    <ul>
+                        <li>Luni - Vineri: 08:00 - 18:00</li>
+                        <li>Sâmbătă: 09:00 - 14:00</li>
+                        <li>Duminică: Închis</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Auto Service Premium. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
 
-    <section class="cta">
-      <div class="container">
-        <h2>Cauți o piesă anume?</h2>
-        <p>Trimite-ne seria VIN și îți recomandăm piesa potrivită cu montaj inclus.</p>
-        <a class="btn" href="contact.html#formular">Solicită ofertă</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Micunealta Secreta</h3>
-          <p>Depozit piese și montaj în service</p>
-        </div>
-        <div class="footer-section">
-          <h4>Linkuri</h4>
-          <ul>
-            <li><a href="servicii.html">Servicii</a></li>
-            <li><a href="piese.html">Piese</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Contact rapid</h4>
-          <p>📞 0721 123 456</p>
-          <p>✉️ piese@micunealta-secreta.ro</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Micunealta Secreta. Toate drepturile rezervate.</p>
-      </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

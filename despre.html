@@ -3,203 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Despre Noi - Micunealta Secreta Auto Service</title>
+    <title>Despre Noi - Auto Service Premium</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Micunealta Secreta</h1>
-                <p>Auto Service Professional</p>
+    <!-- Header cu Logo și Meniu -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-cog"></i>
+                    <span>Auto Service<br><strong>PREMIUM</strong></span>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Acasă</a></li>
+                        <li><a href="despre.html" class="active"><i class="fas fa-info-circle"></i> Despre</a></li>
+                        <li><a href="servicii.html"><i class="fas fa-wrench"></i> Servicii</a></li>
+                        <li><a href="piese.html"><i class="fas fa-car"></i> Piese</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Acasă</a></li>
-                <li><a href="despre.html" class="active">Despre</a></li>
-                <li><a href="servicii.html">Servicii</a></li>
-                <li><a href="piese.html">Piese</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="hero-about">
-            <div class="container">
-                <h1>Despre Micunealta Secreta</h1>
-                <p class="hero-subtitle">Experiență de peste 15 ani în domeniul auto</p>
-            </div>
-        </section>
-
-        <section class="about-content">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-text">
-                        <h2>Cine suntem</h2>
-                        <p>Micunealta Secreta este un atelier auto specializat cu o experiență de peste 15 ani în domeniul service-urilor auto. Ne mândrim cu o echipă de mecanici calificați și echipamente de ultimă generație care ne permit să oferim servicii de cea mai înaltă calitate.</p>
-                        
-                        <p>De la înființare, ne-am dedicat să construim relații de încredere cu clienții noștri, oferind soluții profesionale pentru toate tipurile de vehicule, de la autoturisme la vehicule comerciale.</p>
-                        
-                        <h3>Misiunea noastră</h3>
-                        <p>Să oferim servicii auto de excepție, utilizând cele mai avansate tehnologii și piese originale, pentru a asigura siguranța și performanța vehiculului dumneavoastră.</p>
-                    </div>
-                    
-                    <div class="about-image">
-                        <img src="images/atelier-principal.jpg" alt="Atelierul nostru principal">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="values">
-            <div class="container">
-                <h2>Valorile noastre</h2>
-                <div class="values-grid">
-                    <div class="value-item">
-                        <div class="value-icon">
-                            <i class="icon-quality"></i>
-                        </div>
-                        <h3>Calitate Superioară</h3>
-                        <p>Utilizăm doar piese originale și echipamente profesionale pentru a garanta durabilitatea reparațiilor.</p>
-                    </div>
-                    
-                    <div class="value-item">
-                        <div class="value-icon">
-                            <i class="icon-trust"></i>
-                        </div>
-                        <h3>Încredere</h3>
-                        <p>Transparență totală în comunicare, prețuri corecte și diagnostic onest pentru fiecare vehicul.</p>
-                    </div>
-                    
-                    <div class="value-item">
-                        <div class="value-icon">
-                            <i class="icon-speed"></i>
-                        </div>
-                        <h3>Rapiditate</h3>
-                        <p>Respectăm termenele promise și lucrăm eficient pentru a minimiza timpul de așteptare.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="team">
-            <div class="container">
-                <h2>Echipa noastră</h2>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <img src="images/mecanic-sef.jpg" alt="Mecanic șef">
-                        <h3>Ion Popescu</h3>
-                        <p class="role">Mecanic Șef</p>
-                        <p>Cu o experiență de 20 de ani, Ion coordonează echipa și se ocupă de diagnosticarea problemelor complexe ale motorului.</p>
-                    </div>
-                    
-                    <div class="team-member">
-                        <img src="images/specialist-transmisii.jpg" alt="Specialist transmisii">
-                        <h3>Marian Ionescu</h3>
-                        <p class="role">Specialist Transmisii</p>
-                        <p>Expert în reparații de cutii de viteze și sisteme de transmisie, cu certificări pentru cele mai importante branduri auto.</p>
-                    </div>
-                    
-                    <div class="team-member">
-                        <img src="images/electrician-auto.jpg" alt="Electrician auto">
-                        <h3>Gheorghe Dumitrescu</h3>
-                        <p class="role">Electrician Auto</p>
-                        <p>Specialist în sisteme electrice și electronice auto, expert în diagnosticarea și repararea instalațiilor electrice.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="equipment">
-            <div class="container">
-                <h2>Echipamente moderne</h2>
-                <div class="equipment-list">
-                    <div class="equipment-item">
-                        <h3>Rampe hidraulice profesionale</h3>
-                        <p>Pentru acces sigur și rapid la partea inferioară a vehiculului.</p>
-                    </div>
-                    
-                    <div class="equipment-item">
-                        <h3>Aparatură de diagnosticare computerizată</h3>
-                        <p>Scanere avansate compatibile cu toate mărcile auto moderne.</p>
-                    </div>
-                    
-                    <div class="equipment-item">
-                        <h3>Echipamente pentru geometria roților</h3>
-                        <p>Setare precisă a unghiurilor roților pentru o uzură uniformă.</p>
-                    </div>
-                    
-                    <div class="equipment-item">
-                        <h3>Mașină de echilibrat roți</h3>
-                        <p>Eliminarea vibrațiilor și asigurarea unei conduse confortabile.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="certifications">
-            <div class="container">
-                <h2>Certificări și autorizații</h2>
-                <div class="cert-grid">
-                    <div class="cert-item">
-                        <img src="images/cert-rar.png" alt="Autorizație RAR">
-                        <h3>Autorizație RAR</h3>
-                        <p>Pentru efectuarea ITP-ului și reparații auto certificate</p>
-                    </div>
-                    
-                    <div class="cert-item">
-                        <img src="images/cert-bosch.png" alt="Partener Bosch">
-                        <h3>Partener Bosch Car Service</h3>
-                        <p>Acces la piese originale și tehnologii avansate</p>
-                    </div>
-                    
-                    <div class="cert-item">
-                        <img src="images/cert-iso.png" alt="ISO 9001">
-                        <h3>ISO 9001:2015</h3>
-                        <p>Certificare pentru managementul calității serviciilor</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+    <!-- Page Header -->
+    <section class="page-header">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Micunealta Secreta</h3>
-                    <p>Auto Service de încredere din 2009</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">Instagram</a>
+            <h1>Despre Auto Service Premium</h1>
+            <p>Experiență, profesionalism și pasiune pentru automobilism</p>
+        </div>
+    </section>
+
+    <!-- Povestea Noastră -->
+    <section class="about-story">
+        <div class="container">
+            <div class="two-column">
+                <div class="column-content">
+                    <h2>Povestea Noastră</h2>
+                    <p>Auto Service Premium a fost înființat în 2008 din pasiunea pentru automobilism și dorința de a oferi servicii de calitate superioară. Cu peste 15 ani de experiență în domeniu, am devenit unul dintre cele mai de încredere service-uri auto din regiune.</p>
+                    <p>Fondatorul nostru, Cătălin Popescu, a început cariera în domeniul auto la vârsta de 18 ani, acumulând experiență în cele mai prestigioase service-uri din țară și străinătate. Viziunea sa a fost întotdeauna aceea de a crea un service auto unde calitatea serviciilor și satisfacția clienților sunt pe primul loc.</p>
+                    <p>Astăzi, echipa noastră este formată din 12 mecanici certificați, fiecare specializat în diferite domenii ale mecanicii auto. Investim constant în echipamente moderne și în formarea continuă a personalului pentru a putea oferi cele mai bune servicii clienților noștri.</p>
+                </div>
+                <div class="column-image">
+                    <img src="images/catalin-mechanic.jpg" alt="Cătălin Popescu - Fondator Auto Service Premium">
+                    <div class="image-caption">
+                        <h4>Cătălin Popescu</h4>
+                        <p>Fondator & Master Mecanic</p>
                     </div>
                 </div>
-                
-                <div class="footer-section">
-                    <h4>Servicii</h4>
-                    <ul>
-                        <li><a href="servicii.html#reparatii">Reparații motor</a></li>
-                        <li><a href="servicii.html#diagnostic">Diagnostic auto</a></li>
-                        <li><a href="servicii.html#intretinere">Întreținere</a></li>
-                        <li><a href="servicii.html#anvelope">Anvelope</a></li>
+            </div>
+        </div>
+    </section>
+
+    <!-- Valori -->
+    <section class="values">
+        <div class="container">
+            <div class="section-header">
+                <h2>Valorile Noastre</h2>
+                <p>Principiile care ne ghidează zilnic în activitate</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Profesionalism</h3>
+                    <p>Fiecare membru al echipei noastre este certificat și pregătit să ofere servicii la cele mai înalte standarde.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Integritate</h3>
+                    <p>Transparență totală în diagnostic și costuri. Nu recomandăm niciodată reparații inutile.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Inovație</h3>
+                    <p>Investim în cele mai moderne echipamente și tehnologii pentru diagnosticare și reparații.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Pasiune</h3>
+                    <p>Iubim ce facem și tratăm fiecare mașină cu aceeași grijă ca și cum ar fi a noastră.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Echipa -->
+    <section class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Echipa Noastră</h2>
+                <p>Specialiști dedicați cu experiență vastă în domeniu</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="images/catalin-mechanic.jpg" alt="Cătălin Popescu">
+                    </div>
+                    <h3>Cătălin Popescu</h3>
+                    <p class="member-role">Fondator & Master Mecanic</p>
+                    <p>Peste 20 de ani de experiență în mecanica auto. Specializat în motoare și sisteme de transmisie.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="images/mechanic-2.jpg" alt="Andrei Munteanu">
+                    </div>
+                    <h3>Andrei Munteanu</h3>
+                    <p class="member-role">Specialist Diagnostic</p>
+                    <p>Expert în sisteme electronice auto și diagnosticare computerizată. Certificat pentru toate mărcile europene.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="images/mechanic-3.jpg" alt="Mihai Ionescu">
+                    </div>
+                    <h3>Mihai Ionescu</h3>
+                    <p class="member-role">Mecanic Auto</p>
+                    <p>Specializat în sisteme de frânare și suspensie. 12 ani de experiență în service-uri autorizate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilități -->
+    <section class="facilities">
+        <div class="container">
+            <div class="section-header">
+                <h2>Facilități Moderne</h2>
+                <p>Atelierul nostru este dotat cu echipamente de ultimă generație</p>
+            </div>
+            <div class="two-column">
+                <div class="column-image">
+                    <img src="images/workshop.jpg" alt="Atelier Auto Service Premium">
+                </div>
+                <div class="column-content">
+                    <ul class="features-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Echipamente de Diagnosticare</strong>
+                                <p>Scanner profesional compatibil cu toate mărcile auto</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Rampe Profesionale</strong>
+                                <p>6 posturi de lucru complet echipate</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Centru de Geometrie</strong>
+                                <p>Echipament computerizat pentru reglaj geometrie 3D</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Atelier Climatizare</strong>
+                                <p>Stație profesională pentru întreținere A/C</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Depozit Piese</strong>
+                                <p>Stock permanent de piese pentru intervenții rapide</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Zonă de Așteptare</strong>
+                                <p>Sală confortabilă cu WiFi gratuit și cafea</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-                
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>📍 Strada Mecanicilor nr. 25, București</p>
-                    <p>📞 0721 123 456</p>
-                    <p>✉️ contact@micunealta-secreta.ro</p>
-                    <p>🕒 Luni - Vineri: 8:00 - 18:00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificări -->
+    <section class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2>Certificări & Parteneriate</h2>
+                <p>Colaborăm cu cei mai importanți furnizori din industria auto</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Ani Experiență</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5000+</div>
+                    <div class="stat-label">Clienți Mulțumiți</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Mecanici Certificați</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Satisfacție Clienți</div>
                 </div>
             </div>
-            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <i class="fas fa-cog"></i>
+                        <span>Auto Service<br><strong>PREMIUM</strong></span>
+                    </div>
+                    <p>Servicii profesionale de reparații și întreținere auto de peste 15 ani.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Link-uri Rapide</h4>
+                    <ul>
+                        <li><a href="index.html">Acasă</a></li>
+                        <li><a href="despre.html">Despre</a></li>
+                        <li><a href="servicii.html">Servicii</a></li>
+                        <li><a href="piese.html">Piese</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +40 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> contact@autopremium.ro</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Str. Exemplu nr. 123, București</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Program</h4>
+                    <ul>
+                        <li>Luni - Vineri: 08:00 - 18:00</li>
+                        <li>Sâmbătă: 09:00 - 14:00</li>
+                        <li>Duminică: Închis</li>
+                    </ul>
+                </div>
+            </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Micunealta Secreta. Toate drepturile rezervate.</p>
+                <p>&copy; 2025 Auto Service Premium. Toate drepturile rezervate.</p>
             </div>
         </div>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
 </html>

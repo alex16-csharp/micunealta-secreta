@@ -3,176 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicii - Micunealta Secreta Auto Service</title>
+    <title>Servicii - Auto Service Premium</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Micunealta Secreta</h1>
-                <p>Auto Service Professional</p>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-cog"></i>
+                    <span>Auto Service<br><strong>PREMIUM</strong></span>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Acasă</a></li>
+                        <li><a href="despre.html"><i class="fas fa-info-circle"></i> Despre</a></li>
+                        <li><a href="servicii.html" class="active"><i class="fas fa-wrench"></i> Servicii</a></li>
+                        <li><a href="piese.html"><i class="fas fa-car"></i> Piese</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Acasă</a></li>
-                <li><a href="despre.html">Despre</a></li>
-                <li><a href="servicii.html" class="active">Servicii</a></li>
-                <li><a href="piese.html">Piese</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Serviciile noastre</h1>
-                <p>Reparații auto complete, întreținere și diagnostic avansat</p>
-            </div>
-        </section>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Serviciile Noastre</h1>
+            <p>Tot ce are nevoie mașina ta într-un singur loc</p>
+        </div>
+    </section>
 
+    <!-- Categorii servicii -->
+    <main>
         <section class="services-categories">
             <div class="container">
                 <div class="services-grid">
-                    <a class="service-card" href="#diagnostic" id="diagnostic">
-                        <img src="images/diagnostic.jpg" alt="Diagnostic auto"/>
-                        <h3>Diagnostic Computerizat</h3>
-                        <p>Citire erori, test actuatori, parametri live, resetări și adaptări.</p>
+                    <a href="#mecanica" class="service-card" id="mecanica">
+                        <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>Mecanică Generală</h3>
+                        <p>Reparații pentru motor, transmisie, frâne, suspensie și direcție</p>
                     </a>
-
-                    <a class="service-card" href="#reparatii" id="reparatii">
-                        <img src="images/reparatii-motor.jpg" alt="Reparații motor"/>
-                        <h3>Reparații Motor</h3>
-                        <p>Distribuție, injectoare, turbocompresor, răcire, garnituri, scurgeri.</p>
+                    <a href="#electrica" class="service-card" id="electrica">
+                        <div class="service-icon"><i class="fas fa-car-battery"></i></div>
+                        <h3>Electrică & Electronică</h3>
+                        <p>Diagnosticare, alternatoare, demaroare, senzori, ECU</p>
                     </a>
-
-                    <a class="service-card" href="#transmisie" id="transmisie">
-                        <img src="images/transmisie.jpg" alt="Reparații transmisie"/>
-                        <h3>Transmisie și ambreiaj</h3>
-                        <p>Kit ambreiaj, volantă, cutii manuale/automate, ulei transmisie.</p>
+                    <a href="#anvelope" class="service-card" id="anvelope">
+                        <div class="service-icon"><i class="fas fa-circle-notch"></i></div>
+                        <h3>Roți & Anvelope</h3>
+                        <p>Schimb anvelope, echilibrare, îndreptare jante, depozitare</p>
                     </a>
-
-                    <a class="service-card" href="#frane" id="frane">
-                        <img src="images/frane.jpg" alt="Sistem frânare"/>
-                        <h3>Sistem de frânare</h3>
-                        <p>Plăcuțe, discuri, etriere, lichid frână, ABS, ESP.</p>
-                    </a>
-
-                    <a class="service-card" href="#suspensie" id="suspensie">
-                        <img src="images/suspensie.jpg" alt="Suspensie"/>
-                        <h3>Direcție și suspensie</h3>
-                        <p>Amortizoare, bielete, bucșe, capete bară, casetă direcție.</p>
-                    </a>
-
-                    <a class="service-card" href="#clima" id="clima">
-                        <img src="images/clima.jpg" alt="Climatizare"/>
+                    <a href="#climatizare" class="service-card" id="climatizare">
+                        <div class="service-icon"><i class="fas fa-snowflake"></i></div>
                         <h3>Climatizare A/C</h3>
-                        <p>Încărcare freon, verificare pierderi, compresor, condensator.</p>
+                        <p>Încărcare freon, testare, igienizare și reparații sistem A/C</p>
                     </a>
-
-                    <a class="service-card" href="#anvelope" id="anvelope">
-                        <img src="images/anvelope.jpg" alt="Anvelope"/>
-                        <h3>Anvelope și geometrie</h3>
-                        <p>Schimb anvelope, echilibrare roți, geometrie 3D.</p>
+                    <a href="#diag" class="service-card" id="diag">
+                        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Diagnosticare</h3>
+                        <p>Scanare erori, resetări, adaptări, codări module</p>
                     </a>
-
-                    <a class="service-card" href="#intretinere" id="intretinere">
-                        <img src="images/intretinere.jpg" alt="Întreținere"/>
-                        <h3>Întreținere periodică</h3>
-                        <p>Schimb ulei și filtre, bujii, lichide, verificări generale.</p>
+                    <a href="#revizii" class="service-card" id="revizii">
+                        <div class="service-icon"><i class="fas fa-oil-can"></i></div>
+                        <h3>Revizii Complete</h3>
+                        <p>Schimb ulei, filtre, bujii, lichide, verificări 50+ puncte</p>
                     </a>
                 </div>
             </div>
         </section>
 
+        <!-- Pachete -->
         <section class="packages">
             <div class="container">
-                <h2>Pachete populare</h2>
-                <div class="packages-grid">
-                    <div class="package">
+                <div class="section-header">
+                    <h2>Pachete Populare</h2>
+                    <p>Alege pachetul potrivit pentru mașina ta</p>
+                </div>
+                <div class="cards-3">
+                    <div class="price-card">
+                        <div class="card-badge">Popular</div>
                         <h3>Revizie Standard</h3>
+                        <p class="price">de la 399 lei</p>
                         <ul>
-                            <li>Schimb ulei motor + filtru</li>
-                            <li>Filtru aer + polen</li>
-                            <li>Verificare 25 puncte</li>
+                            <li><i class="fas fa-check"></i> Ulei + Filtru ulei</li>
+                            <li><i class="fas fa-check"></i> Filtru aer + Polen</li>
+                            <li><i class="fas fa-check"></i> Verificare 30 puncte</li>
                         </ul>
-                        <p class="price">de la 399 RON</p>
+                        <a href="contact.html" class="btn btn-primary">Programează</a>
                     </div>
-
-                    <div class="package">
-                        <h3>Revizie Completă</h3>
+                    <div class="price-card">
+                        <h3>Revizie Premium</h3>
+                        <p class="price">de la 699 lei</p>
                         <ul>
-                            <li>Pachet standard + filtru combustibil</li>
-                            <li>Diagnoză completă</li>
-                            <li>Curățare admisie și EGR</li>
+                            <li><i class="fas fa-check"></i> Ulei + Toate filtrele</li>
+                            <li><i class="fas fa-check"></i> Lichid frână + Test</li>
+                            <li><i class="fas fa-check"></i> Diagnosticare completă</li>
                         </ul>
-                        <p class="price">de la 699 RON</p>
+                        <a href="contact.html" class="btn btn-secondary">Cere ofertă</a>
                     </div>
-
-                    <div class="package">
-                        <h3>Siguranță Frânare</h3>
+                    <div class="price-card">
+                        <h3>Climatizare A/C</h3>
+                        <p class="price">de la 249 lei</p>
                         <ul>
-                            <li>Plăcuțe + discuri față</li>
-                            <li>Curățare etrieri</li>
-                            <li>Schimb lichid frână</li>
+                            <li><i class="fas fa-check"></i> Încărcare freon</li>
+                            <li><i class="fas fa-check"></i> Testare presiuni</li>
+                            <li><i class="fas fa-check"></i> Igienizare habitaclu</li>
                         </ul>
-                        <p class="price">de la 549 RON</p>
+                        <a href="contact.html" class="btn btn-outline">Rezervă</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="cta">
+        <!-- Galerie servicii -->
+        <section class="services-gallery">
             <div class="container">
-                <h2>Programare rapidă</h2>
-                <p>Completează formularul din pagina de contact sau sună acum: 0721 123 456</p>
-                <a href="contact.html" class="btn">Fă o programare</a>
-            </div>
-        </section>
-
-        <section class="faq">
-            <div class="container">
-                <h2>Întrebări frecvente</h2>
-                <details>
-                    <summary>Cât durează o revizie?</summary>
-                    <p>În medie 60-90 de minute, în funcție de modelul mașinii.</p>
-                </details>
-                <details>
-                    <summary>Ce garanție oferim?</summary>
-                    <p>12 luni pentru manoperă și conform garanției producătorului pentru piese.</p>
-                </details>
-                <details>
-                    <summary>Pot aduce piesele mele?</summary>
-                    <p>Da, însă garanția se aplică doar pe manoperă.</p>
-                </details>
+                <div class="two-column">
+                    <div class="column-image">
+                        <img src="images/workshop.jpg" alt="Atelier service auto">
+                    </div>
+                    <div class="column-content">
+                        <h2>Lucrăm cu grijă și atenție</h2>
+                        <p>Fiecare intervenție este documentată și realizată după proceduri standardizate pentru a asigura calitatea și siguranța reparațiilor.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check-circle"></i> Piese originale sau aftermarket premium</li>
+                            <li><i class="fas fa-check-circle"></i> Garanție pentru manoperă și piese</li>
+                            <li><i class="fas fa-check-circle"></i> Termene clare și comunicare transparentă</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="main-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Micunealta Secreta</h3>
-                    <p>Auto Service de încredere din 2009</p>
+                <div class="footer-column">
+                    <div class="logo">
+                        <i class="fas fa-cog"></i>
+                        <span>Auto Service<br><strong>PREMIUM</strong></span>
+                    </div>
+                    <p>Servicii profesionale de reparații și întreținere auto de peste 15 ani.</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Linkuri utile</h4>
+                <div class="footer-column">
+                    <h4>Link-uri Rapide</h4>
                     <ul>
+                        <li><a href="index.html">Acasă</a></li>
                         <li><a href="despre.html">Despre</a></li>
                         <li><a href="servicii.html">Servicii</a></li>
                         <li><a href="piese.html">Piese</a></li>
-                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +40 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> contact@autopremium.ro</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Str. Exemplu nr. 123, București</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
                     <h4>Program</h4>
-                    <p>Luni - Vineri: 8:00 - 18:00</p>
-                    <p>Sâmbătă: 9:00 - 14:00</p>
+                    <ul>
+                        <li>Luni - Vineri: 08:00 - 18:00</li>
+                        <li>Sâmbătă: 09:00 - 14:00</li>
+                        <li>Duminică: Închis</li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Micunealta Secreta. Toate drepturile rezervate.</p>
+                <p>&copy; 2025 Auto Service Premium. Toate drepturile rezervate.</p>
             </div>
         </div>
     </footer>
