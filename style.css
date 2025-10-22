@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  /* Color Palette */
-  --primary-blue: #1e40af;
-  --primary-blue-dark: #1e3a8a;
-  --primary-blue-light: #3b82f6;
-  --accent-orange: #f97316;
-  --accent-orange-dark: #ea580c;
-  --accent-orange-light: #fb923c;
+  /* Color Palette - Modern Teal & Gold */
+  --primary-teal: #0d9488;
+  --primary-teal-dark: #0f766e;
+  --primary-teal-light: #14b8a6;
+  --accent-gold: #f59e0b;
+  --accent-gold-dark: #d97706;
+  --accent-gold-light: #fbbf24;
 
   /* Neutral Colors */
   --dark-gray: #0f172a;
@@ -20,16 +20,16 @@
   --border-light: #e2e8f0;
 
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-orange) 100%);
-  --gradient-hero: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #f97316 100%);
-  --gradient-card: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  --gradient-primary: linear-gradient(135deg, var(--primary-teal) 0%, var(--accent-gold) 100%);
+  --gradient-hero: linear-gradient(135deg, #0d9488 0%, #14b8a6 50%, #f59e0b 100%);
+  --gradient-card: linear-gradient(145deg, #ffffff 0%, #f0fdfa 100%);
 
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --shadow-glow: 0 0 20px rgba(59, 130, 246, 0.3);
+  --shadow-glow: 0 0 20px rgba(13, 148, 136, 0.3);
 
   /* Border Radius */
   --radius-sm: 8px;
@@ -167,8 +167,8 @@ p {
 
 .main-nav a:hover,
 .main-nav a.active {
-  color: var(--primary-blue);
-  background: rgba(59, 130, 246, 0.1);
+  color: var(--primary-teal);
+  background: rgba(13, 148, 136, 0.1);
 }
 
 .main-nav a::after {
@@ -230,6 +230,21 @@ p {
   padding-top: 80px;
 }
 
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://images.unsplash.com/photo-1486754735734-325b5831c3ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.1;
+  z-index: 1;
+}
+
 .hero::before {
   content: '';
   position: absolute;
@@ -239,6 +254,7 @@ p {
   bottom: 0;
   background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
   opacity: 0.3;
+  z-index: 2;
 }
 
 .hero .container {
@@ -247,7 +263,7 @@ p {
   gap: var(--space-2xl);
   align-items: center;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .hero-content h2 {
@@ -530,7 +546,7 @@ p {
 .service-card {
   background: var(--gradient-card);
   border-radius: var(--radius-lg);
-  padding: var(--space-lg);
+  padding: 0;
   text-align: center;
   box-shadow: var(--shadow-md);
   transition: all var(--transition-normal);
@@ -559,6 +575,40 @@ p {
   box-shadow: var(--shadow-xl);
 }
 
+.service-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.service-card:hover .service-image img {
+  transform: scale(1.1);
+}
+
+.service-card .service-icon {
+  margin: var(--space-md) 0 var(--space-sm) 0;
+  font-size: 2.5rem;
+}
+
+.service-card h3 {
+  margin: 0 var(--space-lg) var(--space-sm) var(--space-lg);
+  color: var(--dark-gray);
+}
+
+.service-card p {
+  color: var(--medium-gray);
+  margin: 0 var(--space-lg) var(--space-sm) var(--space-lg);
+  padding-bottom: var(--space-md);
+}
+
 .service-icon {
   font-size: 3rem;
   margin-bottom: var(--space-md);
@@ -576,7 +626,7 @@ p {
 }
 
 .service-meta {
-  margin-top: var(--space-sm);
+  margin: 0 var(--space-lg) var(--space-lg) var(--space-lg);
   display: flex;
   justify-content: center;
 }
@@ -602,7 +652,7 @@ p {
 
 .cta-section .btn {
   background: white;
-  color: var(--primary-blue);
+  color: var(--primary-teal);
   font-weight: 700;
 }
 
@@ -651,7 +701,7 @@ p {
 }
 
 .footer-section a:hover {
-  color: var(--accent-orange);
+  color: var(--accent-gold);
 }
 
 .footer-bottom {
@@ -916,8 +966,8 @@ p {
 .form-group textarea:focus,
 .form-group select:focus {
   outline: none;
-  border-color: var(--primary-blue);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: var(--primary-teal);
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.1);
 }
 
 .form-group textarea {
@@ -995,7 +1045,7 @@ p {
 .package-price .price {
   font-size: 1.5rem;
   font-weight: 800;
-  color: var(--primary-blue);
+  color: var(--primary-teal);
 }
 
 /* FAQ Styles */
@@ -1035,17 +1085,22 @@ p {
 }
 
 .product-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   margin-bottom: var(--space-md);
-  display: flex;
-  justify-content: center;
 }
 
-.product-icon {
-  font-size: 3rem;
-  padding: var(--space-md);
-  background: var(--gradient-card);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.product:hover .product-image img {
+  transform: scale(1.05);
 }
 
 .product h3 {
@@ -1068,7 +1123,7 @@ p {
 .product-price .price {
   font-size: 1.5rem;
   font-weight: 800;
-  color: var(--primary-blue);
+  color: var(--primary-teal);
 }
 
 /* Brand Styles */
@@ -1167,7 +1222,7 @@ p {
   display: block;
   font-size: 2rem;
   font-weight: 900;
-  color: var(--accent-orange);
+  color: var(--accent-gold);
 }
 
 .stat-label {
@@ -1207,7 +1262,7 @@ p {
 }
 
 .role {
-  color: var(--primary-blue);
+  color: var(--primary-teal);
   font-weight: 600;
   margin-bottom: var(--space-md);
   font-size: 1.1rem;
@@ -1302,14 +1357,14 @@ p {
 }
 
 .contact-card a {
-  color: var(--primary-blue);
+  color: var(--primary-teal);
   text-decoration: none;
   font-weight: 600;
   transition: color var(--transition-fast);
 }
 
 .contact-card a:hover {
-  color: var(--accent-orange);
+  color: var(--accent-gold);
 }
 
 /* Form Styles */
