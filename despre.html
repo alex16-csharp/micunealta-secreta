@@ -1,110 +1,206 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Despre Noi - Micunealta Secreta Auto Service</title>
+    <meta name="description"
+        content="Despre Micunealta Secreta - Atelier mecanic auto cu peste 15 ani experiență. Echipa noastră de mecanici calificați și echipamente moderne.">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
+
 <body>
-    <header>
-        <nav>
+    <header class="main-header" id="header">
+        <div class="container">
             <div class="logo">
-                <h1>Micunealta Secreta</h1>
-                <p>Auto Service Professional</p>
+                <h1>🔧 Micunealta Secretă</h1>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Acasă</a></li>
-                <li><a href="despre.html" class="active">Despre</a></li>
-                <li><a href="servicii.html">Servicii</a></li>
-                <li><a href="piese.html">Piese</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="despre.html" class="active">Despre Noi</a></li>
+                    <li><a href="servicii.html">Servicii</a></li>
+                    <li><a href="piese.html">Piese Auto</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
     <main>
-        <section class="hero-about">
+        <section class="hero">
             <div class="container">
-                <h1>Despre Micunealta Secreta</h1>
-                <p class="hero-subtitle">Experiență de peste 15 ani în domeniul auto</p>
+                <div class="hero-content animate-on-scroll">
+                    <h1>Despre Micunealta Secretă</h1>
+                    <p class="hero-subtitle">Experiență de peste 15 ani în domeniul auto cu echipă de mecanici
+                        calificați</p>
+                    <div class="cta-buttons">
+                        <a href="servicii.html" class="btn btn-primary">
+                            <span>Vezi Serviciile</span>
+                            <span>🔧</span>
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary">
+                            <span>Contactează-ne</span>
+                            <span>📞</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="about-content">
+        <section class="about-content section">
             <div class="container">
                 <div class="about-grid">
-                    <div class="about-text">
-                        <h2>Cine suntem</h2>
-                        <p>Micunealta Secreta este un atelier auto specializat cu o experiență de peste 15 ani în domeniul service-urilor auto. Ne mândrim cu o echipă de mecanici calificați și echipamente de ultimă generație care ne permit să oferim servicii de cea mai înaltă calitate.</p>
-                        
-                        <p>De la înființare, ne-am dedicat să construim relații de încredere cu clienții noștri, oferind soluții profesionale pentru toate tipurile de vehicule, de la autoturisme la vehicule comerciale.</p>
-                        
-                        <h3>Misiunea noastră</h3>
-                        <p>Să oferim servicii auto de excepție, utilizând cele mai avansate tehnologii și piese originale, pentru a asigura siguranța și performanța vehiculului dumneavoastră.</p>
+                    <div class="about-text animate-on-scroll">
+                        <h2>Cine Suntem</h2>
+                        <p>Micunealta Secretă este un atelier auto specializat cu o experiență de peste 15 ani în
+                            domeniul service-urilor auto. Ne mândrim cu o echipă de mecanici calificați și echipamente
+                            de ultimă generație care ne permit să oferim servicii de cea mai înaltă calitate.</p>
+
+                        <p>De la înființare, ne-am dedicat să construim relații de încredere cu clienții noștri, oferind
+                            soluții profesionale pentru toate tipurile de vehicule, de la autoturisme la vehicule
+                            comerciale.</p>
+
+                        <h3>Misiunea Noastră</h3>
+                        <p>Să oferim servicii auto de excepție, utilizând cele mai avansate tehnologii și piese
+                            originale, pentru a asigura siguranța și performanța vehiculului dumneavoastră.</p>
+
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">🏆</span>
+                                <div>
+                                    <h4>Calitate Superioară</h4>
+                                    <p>Piese originale și echipamente profesionale</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🤝</span>
+                                <div>
+                                    <h4>Încredere</h4>
+                                    <p>Transparență și comunicare onestă</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">⚡</span>
+                                <div>
+                                    <h4>Rapiditate</h4>
+                                    <p>Respectăm termenele promise</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="about-image">
-                        <img src="images/atelier-principal.jpg" alt="Atelierul nostru principal">
+
+                    <div class="about-image animate-on-scroll">
+                        <div class="image-container">
+                            <img src="images/parts-performance.jpg" alt="Atelierul nostru principal"
+                                onerror="this.style.display='none'">
+                            <div class="image-overlay">
+                                <div class="overlay-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">15+</span>
+                                        <span class="stat-label">Ani Experiență</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">1500+</span>
+                                        <span class="stat-label">Clienți Mulțumiți</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="values">
+        <section class="values section-gray">
             <div class="container">
-                <h2>Valorile noastre</h2>
+                <h2 class="section-title animate-on-scroll">Valorile Noastre</h2>
                 <div class="values-grid">
-                    <div class="value-item">
+                    <div class="value-item card animate-on-scroll">
                         <div class="value-icon">
-                            <i class="icon-quality"></i>
+                            <span>🏆</span>
                         </div>
                         <h3>Calitate Superioară</h3>
-                        <p>Utilizăm doar piese originale și echipamente profesionale pentru a garanta durabilitatea reparațiilor.</p>
+                        <p>Utilizăm doar piese originale și echipamente profesionale pentru a garanta durabilitatea
+                            reparațiilor și satisfacția clienților.</p>
                     </div>
-                    
-                    <div class="value-item">
+
+                    <div class="value-item card animate-on-scroll">
                         <div class="value-icon">
-                            <i class="icon-trust"></i>
+                            <span>🤝</span>
                         </div>
                         <h3>Încredere</h3>
-                        <p>Transparență totală în comunicare, prețuri corecte și diagnostic onest pentru fiecare vehicul.</p>
+                        <p>Transparență totală în comunicare, prețuri corecte și diagnostic onest pentru fiecare vehicul
+                            și situație.</p>
                     </div>
-                    
-                    <div class="value-item">
+
+                    <div class="value-item card animate-on-scroll">
                         <div class="value-icon">
-                            <i class="icon-speed"></i>
+                            <span>⚡</span>
                         </div>
                         <h3>Rapiditate</h3>
-                        <p>Respectăm termenele promise și lucrăm eficient pentru a minimiza timpul de așteptare.</p>
+                        <p>Respectăm termenele promise și lucrăm eficient pentru a minimiza timpul de așteptare și a
+                            oferi servicii rapide.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="team">
+        <section class="team section">
             <div class="container">
-                <h2>Echipa noastră</h2>
+                <h2 class="section-title animate-on-scroll">Echipa Noastră</h2>
                 <div class="team-grid">
-                    <div class="team-member">
-                        <img src="images/mecanic-sef.jpg" alt="Mecanic șef">
+                    <div class="team-member card animate-on-scroll">
+                        <div class="member-image">
+                            <div class="member-icon">👨‍🔧</div>
+                        </div>
                         <h3>Ion Popescu</h3>
                         <p class="role">Mecanic Șef</p>
-                        <p>Cu o experiență de 20 de ani, Ion coordonează echipa și se ocupă de diagnosticarea problemelor complexe ale motorului.</p>
+                        <p>Cu o experiență de 20 de ani, Ion coordonează echipa și se ocupă de diagnosticarea
+                            problemelor complexe ale motorului cu precizie și profesionalism.</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">Motor</span>
+                            <span class="skill-tag">Diagnostic</span>
+                            <span class="skill-tag">Management</span>
+                        </div>
                     </div>
-                    
-                    <div class="team-member">
-                        <img src="images/specialist-transmisii.jpg" alt="Specialist transmisii">
+
+                    <div class="team-member card animate-on-scroll">
+                        <div class="member-image">
+                            <div class="member-icon">⚙️</div>
+                        </div>
                         <h3>Marian Ionescu</h3>
                         <p class="role">Specialist Transmisii</p>
-                        <p>Expert în reparații de cutii de viteze și sisteme de transmisie, cu certificări pentru cele mai importante branduri auto.</p>
+                        <p>Expert în reparații de cutii de viteze și sisteme de transmisie, cu certificări pentru cele
+                            mai importante branduri auto și tehnologii moderne.</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">Transmisie</span>
+                            <span class="skill-tag">Ambreiaj</span>
+                            <span class="skill-tag">Certificări</span>
+                        </div>
                     </div>
-                    
-                    <div class="team-member">
-                        <img src="images/electrician-auto.jpg" alt="Electrician auto">
+
+                    <div class="team-member card animate-on-scroll">
+                        <div class="member-image">
+                            <div class="member-icon">🔌</div>
+                        </div>
                         <h3>Gheorghe Dumitrescu</h3>
                         <p class="role">Electrician Auto</p>
-                        <p>Specialist în sisteme electrice și electronice auto, expert în diagnosticarea și repararea instalațiilor electrice.</p>
+                        <p>Specialist în sisteme electrice și electronice auto, expert în diagnosticarea și repararea
+                            instalațiilor electrice cu echipamente de ultimă generație.</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">Electrice</span>
+                            <span class="skill-tag">Electronice</span>
+                            <span class="skill-tag">Diagnostic</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -118,17 +214,17 @@
                         <h3>Rampe hidraulice profesionale</h3>
                         <p>Pentru acces sigur și rapid la partea inferioară a vehiculului.</p>
                     </div>
-                    
+
                     <div class="equipment-item">
                         <h3>Aparatură de diagnosticare computerizată</h3>
                         <p>Scanere avansate compatibile cu toate mărcile auto moderne.</p>
                     </div>
-                    
+
                     <div class="equipment-item">
                         <h3>Echipamente pentru geometria roților</h3>
                         <p>Setare precisă a unghiurilor roților pentru o uzură uniformă.</p>
                     </div>
-                    
+
                     <div class="equipment-item">
                         <h3>Mașină de echilibrat roți</h3>
                         <p>Eliminarea vibrațiilor și asigurarea unei conduse confortabile.</p>
@@ -146,13 +242,13 @@
                         <h3>Autorizație RAR</h3>
                         <p>Pentru efectuarea ITP-ului și reparații auto certificate</p>
                     </div>
-                    
+
                     <div class="cert-item">
                         <img src="images/cert-bosch.png" alt="Partener Bosch">
                         <h3>Partener Bosch Car Service</h3>
                         <p>Acces la piese originale și tehnologii avansate</p>
                     </div>
-                    
+
                     <div class="cert-item">
                         <img src="images/cert-iso.png" alt="ISO 9001">
                         <h3>ISO 9001:2015</h3>
@@ -174,7 +270,7 @@
                         <a href="#" class="social-link">Instagram</a>
                     </div>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4>Servicii</h4>
                     <ul>
@@ -184,7 +280,7 @@
                         <li><a href="servicii.html#anvelope">Anvelope</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <p>📍 Strada Mecanicilor nr. 25, București</p>
@@ -193,13 +289,14 @@
                     <p>🕒 Luni - Vineri: 8:00 - 18:00</p>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2024 Micunealta Secreta. Toate drepturile rezervate.</p>
             </div>
         </div>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>

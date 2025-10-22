@@ -1,121 +1,213 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Piese Auto - Micunealta Secreta</title>
+  <meta name="description"
+    content="Piese auto originale și aftermarket de calitate. Stoc rapid, consultanță tehnică și garanție producător. Toate mărcile auto disponibile.">
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
+
 <body>
-  <header>
-    <nav>
+  <header class="main-header" id="header">
+    <div class="container">
       <div class="logo">
-        <h1>Micunealta Secreta</h1>
-        <p>Auto Service & Piese</p>
+        <h1>🔧 Micunealta Secretă</h1>
       </div>
-      <ul class="nav-menu">
-        <li><a href="index.html">Acasă</a></li>
-        <li><a href="despre.html">Despre</a></li>
-        <li><a href="servicii.html">Servicii</a></li>
-        <li><a href="piese.html" class="active">Piese</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="despre.html">Despre Noi</a></li>
+          <li><a href="servicii.html">Servicii</a></li>
+          <li><a href="piese.html" class="active">Piese Auto</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="container">
-        <h1>Piese auto originale și aftermarket</h1>
-        <p>Stoc rapid, consultanță tehnică și garanție producător</p>
+        <div class="hero-content animate-on-scroll">
+          <h1>Piese Auto Originale și Aftermarket</h1>
+          <p>Stoc rapid, consultanță tehnică și garanție producător pentru toate mărcile auto</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-primary">
+              <span>Solicită Ofertă</span>
+              <span>📋</span>
+            </a>
+            <a href="servicii.html" class="btn btn-secondary">
+              <span>Vezi Serviciile</span>
+              <span>🔧</span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="parts-categories">
+    <section class="parts-categories section">
       <div class="container">
-        <h2>Categorii de piese</h2>
+        <h2 class="section-title animate-on-scroll">Categorii de Piese</h2>
         <div class="parts-grid">
-          <a class="part-card" href="#filtre">
-            <img src="images/filtre.jpg" alt="Filtre" />
+          <div class="part-card service-card animate-on-scroll" id="filtre">
+            <div class="service-icon">🔍</div>
             <h3>Filtre</h3>
-            <p>Ulei, aer, combustibil, polen</p>
-          </a>
-          <a class="part-card" href="#frane">
-            <img src="images/discuri-placute.jpg" alt="Frâne" />
+            <p>Ulei, aer, combustibil, polen - toate mărcile disponibile</p>
+            <div class="service-meta">
+              <span class="badge">Stoc permanent</span>
+            </div>
+          </div>
+          <div class="part-card service-card animate-on-scroll" id="frane">
+            <div class="service-icon">🛡️</div>
             <h3>Frâne</h3>
-            <p>Plăcuțe, discuri, etriere, lichid</p>
-          </a>
-          <a class="part-card" href="#suspensie">
-            <img src="images/suspensie-piese.jpg" alt="Suspensie" />
+            <p>Plăcuțe, discuri, etriere, lichid - siguranță garantată</p>
+            <div class="service-meta">
+              <span class="badge">Siguranță maximă</span>
+            </div>
+          </div>
+          <div class="part-card service-card animate-on-scroll" id="suspensie">
+            <div class="service-icon">🚗</div>
             <h3>Suspensie</h3>
-            <p>Amortizoare, arcuri, bucșe</p>
-          </a>
-          <a class="part-card" href="#transmisie">
-            <img src="images/ambreiaj.jpg" alt="Transmisie" />
+            <p>Amortizoare, arcuri, bucșe - confort și stabilitate</p>
+            <div class="service-meta">
+              <span class="badge">Confort garantat</span>
+            </div>
+          </div>
+          <div class="part-card service-card animate-on-scroll" id="transmisie">
+            <div class="service-icon">⚙️</div>
             <h3>Transmisie</h3>
-            <p>Kit ambreiaj, volantă, ulei</p>
-          </a>
-          <a class="part-card" href="#motor">
-            <img src="images/piese-motor.jpg" alt="Piese motor" />
-            <h3>Piese motor</h3>
-            <p>Distribuție, pompe, senzori</p>
-          </a>
-          <a class="part-card" href="#electrice">
-            <img src="images/electrice.jpg" alt="Electrice" />
+            <p>Kit ambreiaj, volantă, ulei - performanță optimă</p>
+            <div class="service-meta">
+              <span class="badge">Performanță</span>
+            </div>
+          </div>
+          <div class="part-card service-card animate-on-scroll" id="motor">
+            <div class="service-icon">🔧</div>
+            <h3>Piese Motor</h3>
+            <p>Distribuție, pompe, senzori - fiabilitate maximă</p>
+            <div class="service-meta">
+              <span class="badge">Fiabilitate</span>
+            </div>
+          </div>
+          <div class="part-card service-card animate-on-scroll" id="electrice">
+            <div class="service-icon">🔌</div>
             <h3>Electrice</h3>
-            <p>Alternator, demaror, baterii</p>
-          </a>
+            <p>Alternator, demaror, baterii - tehnologie avansată</p>
+            <div class="service-meta">
+              <span class="badge">Tehnologie</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="featured">
+    <section class="featured section-gray">
       <div class="container">
-        <h2>Produse populare</h2>
+        <h2 class="section-title animate-on-scroll">Produse Populare</h2>
         <div class="products-grid">
-          <div class="product">
-            <img src="images/ulei-motor.jpg" alt="Ulei motor 5W30" />
-            <h3>Ulei motor 5W30 LongLife</h3>
-            <p>Compatibil VW/Audi/BMW, canistră 5L</p>
-            <p class="price">149 RON</p>
+          <div class="product card animate-on-scroll">
+            <div class="product-image">
+              <div class="product-icon">🛢️</div>
+            </div>
+            <h3>Ulei Motor 5W30 LongLife</h3>
+            <p>Compatibil VW/Audi/BMW, canistră 5L - calitate premium</p>
+            <div class="product-price">
+              <span class="price">149 RON</span>
+              <span class="badge">Stoc disponibil</span>
+            </div>
           </div>
-          <div class="product">
-            <img src="images/kit-distributie.jpg" alt="Kit distribuție" />
-            <h3>Kit distribuție + pompă apă</h3>
-            <p>Gates/Conti - garanție 24 luni</p>
-            <p class="price">de la 699 RON</p>
+          <div class="product card animate-on-scroll">
+            <div class="product-image">
+              <div class="product-icon">⚙️</div>
+            </div>
+            <h3>Kit Distribuție + Pompă Apă</h3>
+            <p>Gates/Conti - garanție 24 luni, fiabilitate garantată</p>
+            <div class="product-price">
+              <span class="price">de la 699 RON</span>
+              <span class="badge">Garanție 24 luni</span>
+            </div>
           </div>
-          <div class="product">
-            <img src="images/kit-ambreiaj.jpg" alt="Kit ambreiaj" />
-            <h3>Kit ambreiaj cu volantă</h3>
-            <p>LUK/Sachs - pentru motorizări TDI/HDI</p>
-            <p class="price">de la 1599 RON</p>
+          <div class="product card animate-on-scroll">
+            <div class="product-image">
+              <div class="product-icon">🔧</div>
+            </div>
+            <h3>Kit Ambreiaj cu Volantă</h3>
+            <p>LUK/Sachs - pentru motorizări TDI/HDI, performanță optimă</p>
+            <div class="product-price">
+              <span class="price">de la 1599 RON</span>
+              <span class="badge">Performanță</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="brands">
+    <section class="brands section">
       <div class="container">
-        <h2>Mărci disponibile</h2>
-        <ul class="brand-list">
-          <li>Bosch</li>
-          <li>Mahle</li>
-          <li>Mann-Filter</li>
-          <li>TRW</li>
-          <li>ATE</li>
-          <li>Febi</li>
-          <li>LUK</li>
-          <li>Sachs</li>
-        </ul>
+        <h2 class="section-title animate-on-scroll">Mărci Disponibile</h2>
+        <div class="brands-grid">
+          <div class="brand-item card animate-on-scroll">
+            <h3>Bosch</h3>
+            <p>Echipamente și piese de calitate superioară</p>
+          </div>
+          <div class="brand-item card animate-on-scroll">
+            <h3>Mahle</h3>
+            <p>Filtre și componente motor premium</p>
+          </div>
+          <div class="brand-item card animate-on-scroll">
+            <h3>Mann-Filter</h3>
+            <p>Filtre auto de cea mai înaltă calitate</p>
+          </div>
+          <div class="brand-item card animate-on-scroll">
+            <h3>TRW</h3>
+            <p>Sisteme de frânare și direcție</p>
+          </div>
+          <div class="brand-item card animate-on-scroll">
+            <h3>ATE</h3>
+            <p>Lichide și sisteme de frânare</p>
+          </div>
+          <div class="brand-item card animate-on-scroll">
+            <h3>Febi</h3>
+            <p>Piese aftermarket de calitate OEM</p>
+          </div>
+          <div class="brand-item card animate-on-scroll">
+            <h3>LUK</h3>
+            <p>Transmisii și ambreiaje</p>
+          </div>
+          <div class="brand-item card animate-on-scroll">
+            <h3>Sachs</h3>
+            <p>Amortizoare și componente suspensie</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="cta">
+    <section class="cta-section">
       <div class="container">
-        <h2>Cauți o piesă anume?</h2>
-        <p>Trimite-ne seria VIN și îți recomandăm piesa potrivită cu montaj inclus.</p>
-        <a class="btn" href="contact.html#formular">Solicită ofertă</a>
+        <div class="cta-content animate-on-scroll">
+          <h2>Cauți o Piesă Anume?</h2>
+          <p>Trimite-ne seria VIN și îți recomandăm piesa potrivită cu montaj inclus. Consultanță tehnică gratuită!</p>
+          <div class="cta-buttons">
+            <a href="contact.html#formular" class="btn btn-large">
+              <span>Solicită Ofertă</span>
+              <span>📋</span>
+            </a>
+            <a href="tel:0721123456" class="btn btn-secondary btn-large">
+              <span>Sună Acum</span>
+              <span>0721 123 456</span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -148,4 +240,5 @@
   </footer>
   <script src="script.js"></script>
 </body>
+
 </html>

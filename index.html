@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Micunealta Secretă - Atelier Mecanic Auto</title>
+    <title>Micunealta Secretă - Atelier Mecanic Auto Premium</title>
+    <meta name="description"
+        content="Micunealta Secretă - Atelier mecanic auto de încredere cu peste 15 ani experiență. Reparații, întreținere, diagnostic și piese auto de calitate.">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
+
 <body>
     <!-- Header -->
-    <header class="main-header">
+    <header class="main-header" id="header">
         <div class="container">
             <div class="logo">
                 <h1>🔧 Micunealta Secretă</h1>
             </div>
-            <nav class="main-nav">
+            <nav class="main-nav" id="main-nav">
                 <ul>
                     <li><a href="index.html" class="active">Acasă</a></li>
                     <li><a href="despre.html">Despre Noi</a></li>
@@ -22,41 +28,66 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <button class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h2>Atelier Mecanic de Încredere</h2>
-            <p>Oferim servicii complete de reparații și întreținere auto</p>
-            <div class="cta-buttons">
-                <a href="servicii.html" class="btn btn-primary">Serviciile Noastre</a>
-                <a href="contact.html" class="btn btn-secondary">Programează-te</a>
+        <div class="container">
+            <div class="hero-content animate-on-scroll">
+                <h2>Atelier Mecanic de Încredere</h2>
+                <p>Oferim servicii complete de reparații și întreținere auto cu echipamente moderne și mecanici
+                    calificați</p>
+                <div class="cta-buttons">
+                    <a href="servicii.html" class="btn btn-primary">
+                        <span>Serviciile Noastre</span>
+                        <span>→</span>
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">
+                        <span>Programează-te</span>
+                        <span>📞</span>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="hero-image">
-            <img src="images/placeholder-auto.jpg" alt="Atelier mecanic auto" onerror="this.style.display='none'">
+            <div class="hero-image animate-on-scroll">
+                <div class="hero-image-container">
+                    <img src="images/parts-performance.jpg" alt="Atelier mecanic auto modern"
+                        onerror="this.style.display='none'">
+                    <div class="floating-elements">
+                        <div class="floating-icon">🔧</div>
+                        <div class="floating-icon">⚙️</div>
+                        <div class="floating-icon">🛠️</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about-section">
+    <section class="about-section section-gray">
         <div class="container">
-            <h2>Bine Ați Venit la Micunealta Secretă</h2>
+            <h2 class="section-title animate-on-scroll">Bine Ați Venit la Micunealta Secretă</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <p>Cu peste 15 ani de experiență în domeniul mecanic auto, echipa noastră oferă soluții complete pentru întreținerea și repararea autovehiculelor tale.</p>
-                    <p>Folosim echipamente moderne și piese de calitate pentru a asigura funcționarea optimă a mașinii tale.</p>
+                <div class="about-text animate-on-scroll">
+                    <p>Cu peste 15 ani de experiență în domeniul mecanic auto, echipa noastră oferă soluții complete
+                        pentru întreținerea și repararea autovehiculelor tale.</p>
+                    <p>Folosim echipamente moderne și piese de calitate pentru a asigura funcționarea optimă a mașinii
+                        tale. Suntem dedicați să oferim servicii de cea mai înaltă calitate.</p>
                     <ul class="features">
-                        <li>✓ Diagnosticare computerizată</li>
-                        <li>✓ Reparații motor și cutie de viteze</li>
-                        <li>✓ Întreținere periodică</li>
-                        <li>✓ Sistem de frânare și suspensie</li>
-                        <li>✓ Instalații electrice</li>
+                        <li>Diagnosticare computerizată avansată</li>
+                        <li>Reparații motor și cutie de viteze</li>
+                        <li>Întreținere periodică completă</li>
+                        <li>Sistem de frânare și suspensie</li>
+                        <li>Instalații electrice și electronice</li>
+                        <li>Geometrie roți și echilibrare</li>
                     </ul>
                 </div>
-                <div class="about-stats">
+                <div class="about-stats animate-on-scroll">
                     <div class="stat-box">
                         <h3>1500+</h3>
                         <p>Clienți Mulțumiți</p>
@@ -67,7 +98,7 @@
                     </div>
                     <div class="stat-box">
                         <h3>24/7</h3>
-                        <p>Suport</p>
+                        <p>Suport Tehnic</p>
                     </div>
                 </div>
             </div>
@@ -75,29 +106,57 @@
     </section>
 
     <!-- Services Preview -->
-    <section class="services-preview">
+    <section class="services-preview section">
         <div class="container">
-            <h2>Serviciile Noastre Principale</h2>
+            <h2 class="section-title animate-on-scroll">Serviciile Noastre Principale</h2>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card animate-on-scroll">
                     <div class="service-icon">🔧</div>
                     <h3>Reparații Mecanice</h3>
-                    <p>Reparații complete pentru motor, cutie de viteze și transmisie</p>
+                    <p>Reparații complete pentru motor, cutie de viteze și transmisie cu garanție extinsă</p>
+                    <div class="service-meta">
+                        <span class="badge">Garanție 24 luni</span>
+                    </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card animate-on-scroll">
                     <div class="service-icon">🔍</div>
                     <h3>Diagnosticare</h3>
-                    <p>Diagnosticare computerizată cu echipamente profesionale</p>
+                    <p>Diagnosticare computerizată cu echipamente profesionale și rapoarte detaliate</p>
+                    <div class="service-meta">
+                        <span class="badge">Raport gratuit</span>
+                    </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card animate-on-scroll">
                     <div class="service-icon">⚙️</div>
                     <h3>Întreținere</h3>
-                    <p>Revizii tehnice periodice și schimb de consumabile</p>
+                    <p>Revizii tehnice periodice și schimb de consumabile cu piese originale</p>
+                    <div class="service-meta">
+                        <span class="badge">Piese originale</span>
+                    </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card animate-on-scroll">
                     <div class="service-icon">🛡️</div>
                     <h3>Sisteme de Frânare</h3>
-                    <p>Verificare și reparații sistem frânare și ABS</p>
+                    <p>Verificare și reparații sistem frânare și ABS pentru siguranță maximă</p>
+                    <div class="service-meta">
+                        <span class="badge">Siguranță garantată</span>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">🔌</div>
+                    <h3>Instalații Electrice</h3>
+                    <p>Reparații și instalări electrice auto, diagnosticare probleme electronice</p>
+                    <div class="service-meta">
+                        <span class="badge">Diagnostic avansat</span>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">🌡️</div>
+                    <h3>Climatizare</h3>
+                    <p>Încărcare freon, reparații compresor și verificare sistem climatizare</p>
+                    <div class="service-meta">
+                        <span class="badge">Test gratuit</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,9 +165,21 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ai Nevoie de Ajutor?</h2>
-            <p>Contactează-ne astăzi pentru o programare sau o consultație gratuită</p>
-            <a href="contact.html" class="btn btn-large">Contactează-ne Acum</a>
+            <div class="cta-content animate-on-scroll">
+                <h2>Ai Nevoie de Ajutor?</h2>
+                <p>Contactează-ne astăzi pentru o programare sau o consultație gratuită. Echipa noastră de experți este
+                    gata să te ajute!</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-large">
+                        <span>Contactează-ne Acum</span>
+                        <span>📞</span>
+                    </a>
+                    <a href="tel:0721123456" class="btn btn-secondary btn-large">
+                        <span>Sună Direct</span>
+                        <span>0721 123 456</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -144,4 +215,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

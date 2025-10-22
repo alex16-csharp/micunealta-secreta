@@ -1,99 +1,169 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact - Micunealta Secreta Auto Service</title>
+  <meta name="description"
+    content="Contactează Micunealta Secreta pentru programări, oferte și consultanță tehnică. Telefon, email și formular de contact disponibil.">
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
+
 <body>
-  <header>
-    <nav>
+  <header class="main-header" id="header">
+    <div class="container">
       <div class="logo">
-        <h1>Micunealta Secreta</h1>
-        <p>Auto Service Professional</p>
+        <h1>🔧 Micunealta Secretă</h1>
       </div>
-      <ul class="nav-menu">
-        <li><a href="index.html">Acasă</a></li>
-        <li><a href="despre.html">Despre</a></li>
-        <li><a href="servicii.html">Servicii</a></li>
-        <li><a href="piese.html">Piese</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="despre.html">Despre Noi</a></li>
+          <li><a href="servicii.html">Servicii</a></li>
+          <li><a href="piese.html">Piese Auto</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="container">
-        <h1>Contact și programări</h1>
-        <p>Suntem aici să te ajutăm cu orice problemă auto</p>
-      </div>
-    </section>
-
-    <section class="contact-details">
-      <div class="container">
-        <div class="contact-grid">
-          <div class="contact-card">
-            <h3>Date de contact</h3>
-            <p>📍 Strada Mecanicilor nr. 25, București</p>
-            <p>📞 0721 123 456</p>
-            <p>✉️ contact@micunealta-secreta.ro</p>
-            <p>🕒 Luni - Vineri: 8:00 - 18:00 | Sâmbătă: 9:00 - 14:00</p>
-          </div>
-          <div class="contact-card">
-            <h3>Harta</h3>
-            <div class="map-wrap">
-              <iframe title="Harta service" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.391!2d26.102!3d44.426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zNDTCsDI1JzMzLjYiTiAyNsKwMDYnMDcuMiJF!5e0!3m2!1sro!2sro!4v00000000000" width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        <div class="hero-content animate-on-scroll">
+          <h1>Contact și Programări</h1>
+          <p>Suntem aici să te ajutăm cu orice problemă auto. Contactează-ne pentru programări, oferte și consultanță
+            tehnică gratuită!</p>
+          <div class="cta-buttons">
+            <a href="tel:0721123456" class="btn btn-primary">
+              <span>Sună Acum</span>
+              <span>📞</span>
+            </a>
+            <a href="#formular" class="btn btn-secondary">
+              <span>Formular Contact</span>
+              <span>📋</span>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="formular" class="contact-form">
+    <section class="contact-details section">
       <div class="container">
-        <h2>Formular de programare</h2>
-        <form action="#" method="post">
-          <div class="form-grid">
-            <div class="form-group">
-              <label for="nume">Nume</label>
-              <input type="text" id="nume" name="nume" placeholder="Numele tău" required />
-            </div>
-            <div class="form-group">
-              <label for="telefon">Telefon</label>
-              <input type="tel" id="telefon" name="telefon" placeholder="07xx xxx xxx" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="adresa@exemplu.ro" required />
-            </div>
-            <div class="form-group">
-              <label for="marca">Marcă și model</label>
-              <input type="text" id="marca" name="marca" placeholder="Ex: VW Golf 7 2.0 TDI" />
-            </div>
-            <div class="form-group">
-              <label for="vin">Serie VIN (opțional)</label>
-              <input type="text" id="vin" name="vin" placeholder="WVWZZZ..." />
-            </div>
-            <div class="form-group full">
-              <label for="mesaj">Descrierea problemei</label>
-              <textarea id="mesaj" name="mesaj" rows="5" placeholder="Descrie pe scurt problema"></textarea>
-            </div>
+        <h2 class="section-title animate-on-scroll">Informații de Contact</h2>
+        <div class="contact-grid">
+          <div class="contact-card card animate-on-scroll">
+            <div class="contact-icon">📍</div>
+            <h3>Locația Noastră</h3>
+            <p>Strada Mecanicilor nr. 25, București</p>
+            <p>Acces ușor cu mașina, parcare disponibilă</p>
           </div>
-          <div class="form-actions">
-            <button type="submit" class="btn">Trimite cererea</button>
-            <p class="disclaimer">Prin trimiterea formularului ești de acord cu prelucrarea datelor tale în scopul programării.</p>
+          <div class="contact-card card animate-on-scroll">
+            <div class="contact-icon">📞</div>
+            <h3>Telefon</h3>
+            <p><a href="tel:0721123456">0721 123 456</a></p>
+            <p>Disponibil Luni-Vineri 8:00-18:00</p>
           </div>
-        </form>
+          <div class="contact-card card animate-on-scroll">
+            <div class="contact-icon">✉️</div>
+            <h3>Email</h3>
+            <p><a href="mailto:contact@micunealta-secreta.ro">contact@micunealta-secreta.ro</a></p>
+            <p>Răspundem în maximum 24 ore</p>
+          </div>
+          <div class="contact-card card animate-on-scroll">
+            <div class="contact-icon">🕒</div>
+            <h3>Program</h3>
+            <p>Luni - Vineri: 8:00 - 18:00</p>
+            <p>Sâmbătă: 9:00 - 14:00</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="cta">
+    <section id="formular" class="contact-form section-gray">
       <div class="container">
-        <h2>Ai nevoie de o ofertă pentru piese?</h2>
-        <p>Trimite-ne seria VIN și îți răspundem în aceeași zi.</p>
-        <a class="btn" href="piese.html">Vezi piesele</a>
+        <h2 class="section-title animate-on-scroll">Formular de Programare</h2>
+        <div class="form-container">
+          <form id="contact-form" class="contact-form-content animate-on-scroll">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="nume">Nume Complet *</label>
+                <input type="text" id="nume" name="nume" placeholder="Numele tău complet" required />
+              </div>
+              <div class="form-group">
+                <label for="telefon">Număr de Telefon *</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="07xx xxx xxx" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Adresă Email *</label>
+                <input type="email" id="email" name="email" placeholder="adresa@exemplu.ro" required />
+              </div>
+              <div class="form-group">
+                <label for="marca">Marcă și Model Mașină</label>
+                <input type="text" id="marca" name="marca" placeholder="Ex: VW Golf 7 2.0 TDI" />
+              </div>
+              <div class="form-group">
+                <label for="vin">Serie VIN (opțional)</label>
+                <input type="text" id="vin" name="vin" placeholder="WVWZZZ..." />
+              </div>
+              <div class="form-group">
+                <label for="serviciu">Tip Serviciu</label>
+                <select id="serviciu" name="serviciu">
+                  <option value="">Selectează serviciul</option>
+                  <option value="diagnostic">Diagnostic Computerizat</option>
+                  <option value="reparatii">Reparații Motor</option>
+                  <option value="intretinere">Întreținere Periodică</option>
+                  <option value="frane">Sistem Frânare</option>
+                  <option value="suspensie">Suspensie și Direcție</option>
+                  <option value="clima">Climatizare</option>
+                  <option value="electrice">Instalații Electrice</option>
+                  <option value="alte">Alte servicii</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="mesaj">Descrierea Problemei</label>
+                <textarea id="mesaj" name="mesaj" rows="5"
+                  placeholder="Descrie pe scurt problema sau serviciul de care ai nevoie"></textarea>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-large">
+                <span>Trimite Cererea</span>
+                <span>📤</span>
+              </button>
+              <p class="disclaimer">Prin trimiterea formularului ești de acord cu prelucrarea datelor tale în scopul
+                programării și oferirii serviciilor.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content animate-on-scroll">
+          <h2>Ai Nevoie de Ofertă pentru Piese?</h2>
+          <p>Trimite-ne seria VIN și îți răspundem în aceeași zi cu ofertă personalizată și consultanță tehnică
+            gratuită!</p>
+          <div class="cta-buttons">
+            <a href="piese.html" class="btn btn-large">
+              <span>Vezi Piesele</span>
+              <span>🔧</span>
+            </a>
+            <a href="tel:0721123456" class="btn btn-secondary btn-large">
+              <span>Sună pentru Ofertă</span>
+              <span>📞</span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -129,4 +199,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

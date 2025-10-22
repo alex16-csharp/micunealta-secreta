@@ -1,24 +1,34 @@
-// Meniu responsive
-const menuToggle = document.querySelector('.menu-toggle');
-const navMenu = document.querySelector('nav ul');
+// Mobile Menu Toggle
+const menuToggle = document.getElementById('menu-toggle');
+const mainNav = document.getElementById('main-nav');
+const header = document.getElementById('header');
 
-if (menuToggle) {
+if (menuToggle && mainNav) {
     menuToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
+        mainNav.classList.toggle('active');
         menuToggle.classList.toggle('active');
     });
 }
 
-// Închide meniul când se dă click pe un link
-const navLinks = document.querySelectorAll('nav ul li a');
+// Close menu when clicking on links
+const navLinks = document.querySelectorAll('.main-nav a');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
+        mainNav.classList.remove('active');
         menuToggle.classList.remove('active');
     });
 });
 
-// Animații la scroll
+// Header scroll effect
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+// Scroll animations
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -27,19 +37,17 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.classList.add('animated');
         }
     });
 }, observerOptions);
 
-// Aplică animații pe secțiuni
-const sections = document.querySelectorAll('section, .service-card, .part-card');
-sections.forEach(section => {
-    section.style.opacity = '0';
-    section.style.transform = 'translateY(30px)';
-    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(section);
+// Apply animations to elements
+document.addEventListener('DOMContentLoaded', () => {
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    animatedElements.forEach(element => {
+        observer.observe(element);
+    });
 });
 
 // Highlight pe servicii din servicii.html
@@ -49,7 +57,7 @@ serviceCards.forEach(card => {
         card.style.transform = 'translateY(-10px) scale(1.03)';
         card.style.boxShadow = '0 15px 40px rgba(0, 0, 0, 0.2)';
     });
-    
+
     card.addEventListener('mouseleave', () => {
         card.style.transform = 'translateY(0) scale(1)';
         card.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
@@ -61,13 +69,13 @@ const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         // Verifică dacă toate câmpurile sunt completate
         const nume = document.getElementById('nume').value;
         const email = document.getElementById('email').value;
         const telefon = document.getElementById('telefon').value;
         const mesaj = document.getElementById('mesaj').value;
-        
+
         if (nume && email && telefon && mesaj) {
             // Crează pop-up
             const popup = document.createElement('div');
@@ -80,9 +88,9 @@ if (contactForm) {
                     <p>Vă vom contacta în curând la <strong>${email}</strong> sau <strong>${telefon}</strong>.</p>
                 </div>
             `;
-            
+
             document.body.appendChild(popup);
-            
+
             // Stilizare pop-up
             popup.style.cssText = `
                 position: fixed;
@@ -97,7 +105,7 @@ if (contactForm) {
                 z-index: 1000;
                 animation: fadeIn 0.3s ease;
             `;
-            
+
             const popupContent = popup.querySelector('.popup-content');
             popupContent.style.cssText = `
                 background: white;
@@ -109,7 +117,7 @@ if (contactForm) {
                 max-width: 500px;
                 animation: slideIn 0.3s ease;
             `;
-            
+
             const closeBtn = popup.querySelector('.popup-close');
             closeBtn.style.cssText = `
                 position: absolute;
@@ -120,15 +128,15 @@ if (contactForm) {
                 color: #666;
                 transition: color 0.3s;
             `;
-            
+
             closeBtn.addEventListener('mouseenter', () => {
                 closeBtn.style.color = '#000';
             });
-            
+
             closeBtn.addEventListener('mouseleave', () => {
                 closeBtn.style.color = '#666';
             });
-            
+
             // Închide pop-up
             closeBtn.addEventListener('click', () => {
                 popup.style.animation = 'fadeOut 0.3s ease';
@@ -137,7 +145,7 @@ if (contactForm) {
                     contactForm.reset();
                 }, 300);
             });
-            
+
             // Închide pop-up la click pe fundal
             popup.addEventListener('click', (e) => {
                 if (e.target === popup) {
