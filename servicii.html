@@ -1,182 +1,149 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="ro-RO">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicii - Micunealta Secreta Auto Service</title>
+    <title>Servicii - Micunealta Secreta</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Micunealta Secreta</h1>
-                <p>Auto Service Professional</p>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Acasă</a></li>
-                <li><a href="despre.html">Despre</a></li>
-                <li><a href="servicii.html" class="active">Servicii</a></li>
-                <li><a href="piese.html">Piese</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Serviciile noastre</h1>
-                <p>Reparații auto complete, întreținere și diagnostic avansat</p>
-            </div>
-        </section>
-
-        <section class="services-categories">
-            <div class="container">
-                <div class="services-grid">
-                    <a class="service-card" href="#diagnostic" id="diagnostic">
-                        <img src="images/diagnostic.jpg" alt="Diagnostic auto"/>
-                        <h3>Diagnostic Computerizat</h3>
-                        <p>Citire erori, test actuatori, parametri live, resetări și adaptări.</p>
-                    </a>
-
-                    <a class="service-card" href="#reparatii" id="reparatii">
-                        <img src="images/reparatii-motor.jpg" alt="Reparații motor"/>
-                        <h3>Reparații Motor</h3>
-                        <p>Distribuție, injectoare, turbocompresor, răcire, garnituri, scurgeri.</p>
-                    </a>
-
-                    <a class="service-card" href="#transmisie" id="transmisie">
-                        <img src="images/transmisie.jpg" alt="Reparații transmisie"/>
-                        <h3>Transmisie și ambreiaj</h3>
-                        <p>Kit ambreiaj, volantă, cutii manuale/automate, ulei transmisie.</p>
-                    </a>
-
-                    <a class="service-card" href="#frane" id="frane">
-                        <img src="images/frane.jpg" alt="Sistem frânare"/>
-                        <h3>Sistem de frânare</h3>
-                        <p>Plăcuțe, discuri, etriere, lichid frână, ABS, ESP.</p>
-                    </a>
-
-                    <a class="service-card" href="#suspensie" id="suspensie">
-                        <img src="images/suspensie.jpg" alt="Suspensie"/>
-                        <h3>Direcție și suspensie</h3>
-                        <p>Amortizoare, bielete, bucșe, capete bară, casetă direcție.</p>
-                    </a>
-
-                    <a class="service-card" href="#clima" id="clima">
-                        <img src="images/clima.jpg" alt="Climatizare"/>
-                        <h3>Climatizare A/C</h3>
-                        <p>Încărcare freon, verificare pierderi, compresor, condensator.</p>
-                    </a>
-
-                    <a class="service-card" href="#anvelope" id="anvelope">
-                        <img src="images/anvelope.jpg" alt="Anvelope"/>
-                        <h3>Anvelope și geometrie</h3>
-                        <p>Schimb anvelope, echilibrare roți, geometrie 3D.</p>
-                    </a>
-
-                    <a class="service-card" href="#intretinere" id="intretinere">
-                        <img src="images/intretinere.jpg" alt="Întreținere"/>
-                        <h3>Întreținere periodică</h3>
-                        <p>Schimb ulei și filtre, bujii, lichide, verificări generale.</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="packages">
-            <div class="container">
-                <h2>Pachete populare</h2>
-                <div class="packages-grid">
-                    <div class="package">
-                        <h3>Revizie Standard</h3>
-                        <ul>
-                            <li>Schimb ulei motor + filtru</li>
-                            <li>Filtru aer + polen</li>
-                            <li>Verificare 25 puncte</li>
-                        </ul>
-                        <p class="price">de la 399 RON</p>
-                    </div>
-
-                    <div class="package">
-                        <h3>Revizie Completă</h3>
-                        <ul>
-                            <li>Pachet standard + filtru combustibil</li>
-                            <li>Diagnoză completă</li>
-                            <li>Curățare admisie și EGR</li>
-                        </ul>
-                        <p class="price">de la 699 RON</p>
-                    </div>
-
-                    <div class="package">
-                        <h3>Siguranță Frânare</h3>
-                        <ul>
-                            <li>Plăcuțe + discuri față</li>
-                            <li>Curățare etrieri</li>
-                            <li>Schimb lichid frână</li>
-                        </ul>
-                        <p class="price">de la 549 RON</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta">
-            <div class="container">
-                <h2>Programare rapidă</h2>
-                <p>Completează formularul din pagina de contact sau sună acum: 0721 123 456</p>
-                <a href="contact.html" class="btn">Fă o programare</a>
-            </div>
-        </section>
-
-        <section class="faq">
-            <div class="container">
-                <h2>Întrebări frecvente</h2>
-                <details>
-                    <summary>Cât durează o revizie?</summary>
-                    <p>În medie 60-90 de minute, în funcție de modelul mașinii.</p>
-                </details>
-                <details>
-                    <summary>Ce garanție oferim?</summary>
-                    <p>12 luni pentru manoperă și conform garanției producătorului pentru piese.</p>
-                </details>
-                <details>
-                    <summary>Pot aduce piesele mele?</summary>
-                    <p>Da, însă garanția se aplică doar pe manoperă.</p>
-                </details>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Micunealta Secreta</h3>
-                    <p>Auto Service de încredere din 2009</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Linkuri utile</h4>
-                    <ul>
-                        <li><a href="despre.html">Despre</a></li>
-                        <li><a href="servicii.html">Servicii</a></li>
-                        <li><a href="piese.html">Piese</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Program</h4>
-                    <p>Luni - Vineri: 8:00 - 18:00</p>
-                    <p>Sâmbătă: 9:00 - 14:00</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Micunealta Secreta. Toate drepturile rezervate.</p>
+    <a href='servicii.html' class="stt" title="scroll to top"></a>
+    
+    <div class="navbar">
+        <a href="index.html">Acasă</a>
+        <a href="despre.html">Despre Noi</a>
+        <div class="dropdown">
+            <button class="dropbtn">Servicii</button>
+            <div class="dropdown-content">
+                <a href="#diagnoza">Diagnoză Auto</a>
+                <a href="#reparatii">Reparații Mecanice</a>
+                <a href="#revizie">Revizie Periodică</a>
+                <a href="#frane">Service Frână</a>
+                <a href="#suspensie">Service Suspensie</a>
             </div>
         </div>
-    </footer>
+        <a href="piese.html">Piese Auto</a>
+        <a href="contact.html">Contact</a>
+        <div class="social-nav">
+            <a href="tel:+40700000000"><ion-icon name="call-outline"></ion-icon></a>
+            <a href="mailto:contact@micunealtasecreta.ro"><ion-icon name="mail-outline"></ion-icon></a>
+            <a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+    </div>
 
+    <div class="hero-image" style="background: linear-gradient(rgba(10, 25, 41, 0.8), rgba(10, 25, 41, 0.8)), url('https://images.unsplash.com/photo-1632053002805-193f42e1dd6b?w=1200') center/cover;">
+        <div class="hero-text">
+            <h1>SERVICIILE NOASTRE</h1>
+            <p>Soluții Complete pentru Mașina Ta</p>
+        </div>
+    </div>
+
+    <section class="about-preview" id="diagnoza">
+        <div class="container">
+            <h2>Diagnoză Electronică Completă</h2>
+            <hr>
+            <p>Folosim echipamente profesionale de diagnoză pentru identificarea rapidă și precisă a problemelor. Scanăm toate sistemele: motor, transmisie, ABS, airbag, climatizare și multe altele.</p>
+        </div>
+    </section>
+
+    <section class="services-preview" id="reparatii">
+        <div class="container">
+            <h2 class="section-title">Reparații Mecanice</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3004/3004458.png" alt="Motor">
+                    </div>
+                    <h3>Reparații Motor</h3>
+                    <p>Revizie, rectificare, înlocuire componente, timing</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2713/2713497.png" alt="Transmisie">
+                    </div>
+                    <h3>Service Transmisie</h3>
+                    <p>Cutie viteze, ambreiaj, diferențial</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png" alt="Suspensie">
+                    </div>
+                    <h3>Sistem Suspensie</h3>
+                    <p>Amortizoare, arcuri, bară stabilizatoare</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3004/3004627.png" alt="Direcție">
+                    </div>
+                    <h3>Sistem Direcție</h3>
+                    <p>Cremaliieră, pompa, capete de bară</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose" id="revizie">
+        <div class="container">
+            <h2 class="section-title">Revizie Periodică</h2>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <ion-icon name="water-outline"></ion-icon>
+                    <h4>Schimb Ulei</h4>
+                    <p>Uleiuri de motor premium + filtru ulei</p>
+                </div>
+                <div class="feature-box">
+                    <ion-icon name="funnel-outline"></ion-icon>
+                    <h4>Filtre</h4>
+                    <p>Aer, ulei, motorină, polen</p>
+                </div>
+                <div class="feature-box">
+                    <ion-icon name="flash-outline"></ion-icon>
+                    <h4>Bujii</h4>
+                    <p>Înlocuire bujii + verificare</p>
+                </div>
+                <div class="feature-box">
+                    <ion-icon name="car-outline"></ion-icon>
+                    <h4>Verificare Completă</h4>
+                    <p>Inspecție 50 puncte</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-preview" id="frane">
+        <div class="container">
+            <h2 class="section-title">Service Sistem Frânare</h2>
+            <div class="about-preview" style="background: transparent;">
+                <p>Înlocuim plăcuțe, discuri, etriere, cilindri, purjăm sistemul hidraulic. Lucrăm cu piese de calitate și garantăm siguranța sistemului de frânare.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Programează-te Pentru Un Service</h2>
+            <p>Contactează-ne pentru o consultație gratuită și o ofertă personalizată</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="cta-button primary">Contactează-ne</a>
+                <a href="tel:+40700000000" class="cta-button secondary">Sună Acum</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <h1>Micunealta Secreta</h1>
+        <p>Telefon: 0700 000 000<br>Email: contact@micunealtasecreta.ro<br>Program: Luni - Vineri: 08:00 - 18:00 | Sâmbătă: 09:00 - 14:00</p>
+        <a class="social-icon" href="tel:+40700000000"><ion-icon name="call-outline"></ion-icon></a>
+        <a class="social-icon" href="mailto:contact@micunealtasecreta.ro"><ion-icon name="mail-outline"></ion-icon></a>
+        <a class="social-icon" href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a class="social-icon" href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+        <p>© Copyright 2025 Micunealta Secreta. Toate drepturile rezervate.</p>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
