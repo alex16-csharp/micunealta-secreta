@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  /* Color Palette - Modern Teal & Gold */
-  --primary-teal: #0d9488;
-  --primary-teal-dark: #0f766e;
-  --primary-teal-light: #14b8a6;
-  --accent-gold: #f59e0b;
-  --accent-gold-dark: #d97706;
-  --accent-gold-light: #fbbf24;
+  /* Color Palette - Modern Blue & Orange */
+  --primary-blue: #2563eb;
+  --primary-blue-dark: #1e3a8a;
+  --primary-blue-light: #3b82f6;
+  --accent-orange: #ea580c;
+  --accent-orange-dark: #dc2626;
+  --accent-orange-light: #fb923c;
 
   /* Neutral Colors */
   --dark-gray: #0f172a;
@@ -20,8 +20,8 @@
   --border-light: #e2e8f0;
 
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, var(--primary-teal) 0%, var(--accent-gold) 100%);
-  --gradient-hero: linear-gradient(135deg, #0d9488 0%, #14b8a6 50%, #f59e0b 100%);
+  --gradient-primary: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-orange) 100%);
+  --gradient-hero: linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #ea580c 100%);
   --gradient-card: linear-gradient(145deg, #ffffff 0%, #f0fdfa 100%);
 
   /* Shadows */
@@ -29,7 +29,7 @@
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --shadow-glow: 0 0 20px rgba(13, 148, 136, 0.3);
+  --shadow-glow: 0 0 20px rgba(37, 99, 235, 0.3);
 
   /* Border Radius */
   --radius-sm: 8px;
@@ -167,8 +167,8 @@ p {
 
 .main-nav a:hover,
 .main-nav a.active {
-  color: var(--primary-teal);
-  background: rgba(13, 148, 136, 0.1);
+  color: var(--primary-blue);
+  background: rgba(37, 99, 235, 0.1);
 }
 
 .main-nav a::after {
@@ -652,7 +652,7 @@ p {
 
 .cta-section .btn {
   background: white;
-  color: var(--primary-teal);
+  color: var(--primary-blue);
   font-weight: 700;
 }
 
@@ -966,8 +966,8 @@ p {
 .form-group textarea:focus,
 .form-group select:focus {
   outline: none;
-  border-color: var(--primary-teal);
-  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.1);
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
 .form-group textarea {
@@ -1045,7 +1045,7 @@ p {
 .package-price .price {
   font-size: 1.5rem;
   font-weight: 800;
-  color: var(--primary-teal);
+  color: var(--primary-blue);
 }
 
 /* FAQ Styles */
@@ -1123,7 +1123,7 @@ p {
 .product-price .price {
   font-size: 1.5rem;
   font-weight: 800;
-  color: var(--primary-teal);
+  color: var(--primary-blue);
 }
 
 /* Brand Styles */
@@ -1262,7 +1262,7 @@ p {
 }
 
 .role {
-  color: var(--primary-teal);
+  color: var(--primary-blue);
   font-weight: 600;
   margin-bottom: var(--space-md);
   font-size: 1.1rem;
@@ -1357,7 +1357,7 @@ p {
 }
 
 .contact-card a {
-  color: var(--primary-teal);
+  color: var(--primary-blue);
   text-decoration: none;
   font-weight: 600;
   transition: color var(--transition-fast);
